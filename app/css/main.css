@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: normal;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  background: white;
+  color: rgba(35, 35, 35, 0.87); }
+
+html, body {
+  overflow-x: hidden; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.text-center {
+  text-align: center; }
+
+a {
+  display: block;
+  text-decoration: none;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  outline: none; }
+  a:hover, a:focus {
+    text-decoration: none; }
+
+input, textarea, select {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+    border-radius: 0;
+  width: 100%; }
+  input:hover, textarea:hover, select:hover {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+label {
+  display: block;
+  width: 100%; }
+
+button, .btn {
+  outline: none;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  border: none;
+    border-radius: 0; }
+  button:hover, button:focus, .btn:hover, .btn:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 52px; }
+
+.btn-border {
+  border: 1px solid #fff;
+    border-radius: 16px;
+  color: #fff;
+  background: transparent;
+  padding: 0 45px; }
+  .btn-border:hover, .btn-border:focus {
+    background: transparent;
+    color: #fff;
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+.btn-border-black {
+  border: 1px solid #000;
+    border-radius: 16px;
+  color: #000;
+  padding: 0 24px; }
+  .btn-border-black:hover {
+    background: #000;
+    color: #fff; }
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: transparent;
+  border-color: #fff;
+  color: #fff; }
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.dropdown-toggle::after {
+  width: 14px;
+  height: 6px;
+  border: none;
+  background: url("data:image/svg+xml,%3Csvg width='16' height='9' viewBox='0 0 16 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L8 7L15 1' stroke='white' stroke-width='2'/%3E%3C/svg%3E%0A") no-repeat center;
+    background-size: 100%;
+  margin: 0 0 0 11px; }
+
+.dropdown-menu {
+  width: 100%;
+  margin: 15px 0 0;
+  border: 1px solid #000000;
+    border-radius: 16px;
+  background: #fff;
+  -webkit-box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.1);
+  padding: 30px; }
+
+.btn-black {
+  color: #fff;
+  background: #000; }
+
+.svg-icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%; }
+
+h2, h1 {
+  width: 100%;
+  font-size: 64px;
+  font-weight: bold;
+  letter-spacing: 1.6px; }
+
+.container {
+  max-width: 1560px; }
+
+h1 {
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 76px; }
+  h1 span {
+    display: block;
+    margin: 0 0 24px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.05em; }
+
+h2 {
+  width: 100%;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 76px; }
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /**/ }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/ }
+
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }
