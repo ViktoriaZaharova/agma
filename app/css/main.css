@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -20,9 +21,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
-ol, ul {
-  list-style: none; }
-
 blockquote, q {
   quotes: none; }
 
@@ -42,7 +40,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   background: white;
-  color: rgba(35, 35, 35, 0.87); }
+  color: #000; }
 
 html, body {
   overflow-x: hidden; }
@@ -71,13 +69,27 @@ input, textarea, select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  padding: 0;
+  padding: 35px 0 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   border: none;
     border-radius: 0;
-  width: 100%; }
+    border-bottom: 2px solid #000000;
+  width: 100%;
+  height: 87px;
+  font-size: 24px;
+  line-height: 145.4%;
+  color: #000000;
+  background: transparent; }
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
+    color: #000000; }
+  input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+    color: #000000; }
+  input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder {
+    color: #000000; }
+  input::placeholder, textarea::placeholder, select::placeholder {
+    color: #000000; }
   input:hover, textarea:hover, select:hover {
     outline: none;
     -webkit-box-shadow: none;
@@ -170,7 +182,33 @@ button, .btn {
 
 .btn-black {
   color: #fff;
-  background: #000; }
+  border-radius: 16px;
+  padding: 0 36px;
+  background: #000;
+  height: 56px;
+  font-size: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
+  .btn-black:hover {
+    background: #EAD9CD;
+    color: #000;
+    text-decoration: none; }
+  .btn-black .btn-arrow {
+    margin: 0 0 0 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    stroke: #fff; }
 
 .svg-icon {
   display: inline-block;
@@ -203,44 +241,131 @@ h2 {
   font-weight: 600;
   line-height: 76px; }
 
-/*==========  Desktop First  ==========*/
-/* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
-  /**/ }
+h3 {
+  font-size: 48px;
+  font-weight: 600;
+  width: 100%;
+  color: #000000; }
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-  /**/ }
+.m-150 {
+  margin: 150px 0; }
 
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-  /**/ }
+.mb-100 {
+  margin-bottom: 100px; }
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-  /**/ }
+.mb-80 {
+  margin-bottom: 80px; }
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /**/ }
+.mb-60 {
+  margin-bottom: 60px; }
 
-/*==========  Mobile First  ==========*/
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-  /**/ }
+.mb-40 {
+  margin-bottom: 40px; }
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  /**/ }
+strong, b {
+  display: inline-block;
+  font-weight: bold; }
 
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  /**/ }
+.ul-my {
+  list-style: none; }
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  /**/ }
+.bg-grey {
+  background: #F5F0ED; }
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
-  /**/ }
+.slick-slider {
+  width: 100%; }
+
+.slick-slide {
+  outline: none; }
+
+.slider-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: inherit;
+      flex-wrap: inherit; }
+
+.slider-arrows {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.slick-arrow {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  padding: 0;
+  opacity: 1;
+  z-index: 1;
+  cursor: pointer;
+  background: #fff;
+  fill: none;
+  stroke: #000;
+  border: none;
+    border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: .3s ease;
+  transition: .3s ease; }
+  .slick-arrow:hover, .slick-arrow:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    outline: none;
+    stroke: #808080; }
+  .slick-arrow .svg-icon {
+    width: 9px;
+    height: 12px; }
+
+.slick-prev {
+  border-radius: 100px 0 0 100px; }
+
+.slick-next {
+  border-radius: 0 100px 100px 0; }
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.counter-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px 10px;
+  border-radius: 30px;
+  background: #fff;
+  font-size: 16px; }
+  .counter-slide__cp {
+    margin: 0 3px 0 0; }
+  .counter-slide__default {
+    color: #808080; }

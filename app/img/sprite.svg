@@ -41,4 +41,17 @@
         <path d="M14 21L22 12M22 12L14 3M22 12L-3.93403e-07 12" stroke-width="2"/>
     </symbol>
 
+    <symbol id="download-icon" viewBox="0 0 16 16">
+        <path d="M3 6.5L8 10.5M8 10.5L13 6.5M8 10.5V0" stroke-width="2"/>
+        <path d="M1 15H15" stroke-width="2"/>
+    </symbol>
+
+    <symbol id="next" viewBox="0 0 9 14">
+        <path d="M1 1L7 7L0.999999 13" stroke-width="2"/>
+    </symbol>
+
+    <symbol id="prev" viewBox="0 0 9 14">
+        <path d="M8 1L2 7L8 13" stroke-width="2"/>
+    </symbol>
+
 </svg>

@@ -3,7 +3,12 @@
 /*==========  header  ==========*/
 header
   padding: 24px 0 36px
-  position: relative
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 3
+  background: transparent
   &:before
     content: ''
     position: absolute
@@ -13,23 +18,59 @@ header
     width: calc(100% - 30px)
     max-width: 1800px
     height: 2px
-    background: #000
+    background: #fff
   .container
     max-width: 1860px
   .dropdown
     .mail
       margin: 15px 0 30px
+  .logo
+    filter: brightness(0) invert(1)
+  &.fixed
+    background: #fff
+    color: #000
+    border-bottom: 2px solid #000
+    .logo
+      filter: invert(1)
+    .menu
+      li
+        a
+          color: #000
+    .btn-catalog__icon
+      fill: #000
+    .btn-search, .links-social
+      stroke: #000
+    .documents-links
+      .svg-icon
+        stroke: #000
+      a
+        color: #000
+      .format-document
+        color: #fff
+    .documents-links-pdf
+      background: #F5F0ED
+    .btn-border
+      color: #000
+      border-color: #000
+    .dropdown-toggle
+      &:hover, &:focus
+        color: inherit
+        border-color: inherit
+      &::after
+        background: url("data:image/svg+xml,%3Csvg width='16' height='9' viewBox='0 0 16 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L8 7L15 1' stroke='black' stroke-width='2'/%3E%3C/svg%3E%0A") no-repeat center
+          size: 100%
 
 
 .header
-  padding: 24px 0 36px
-  position: absolute
-  left: 0
-  top: 0
-  width: 100%
-  z-index: 2
+  background: #fff
+  color: #000
   &:before
-    background: #fff
+    background: #000
+  .logo
+    filter: invert(1)
+
+
+
 
 .logo
   display: flex
