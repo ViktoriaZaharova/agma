@@ -32,3 +32,10 @@ $(document).ready(function () {
 });
 
 
+// $('.sales-slider').slick({
+//     slidesToShow: 3,
+//     arrows: false,
+//
+// });
+
+

@@ -1,4 +1,89 @@
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
+/*==========  footer  ==========*/
+footer {
+  background: #000;
+  color: #fff;
+  padding: 110px 0 116px; }
+  footer .links-social {
+    color: #fff;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: auto;
+    min-width: auto; }
+    footer .links-social__icon {
+      margin: 0 16px 0 0;
+      width: 24px;
+      height: 24px;
+      min-width: 24px; }
+  footer .links-download {
+    color: #fff; }
+    footer .links-download__icon {
+      stroke: #fff; }
+  footer .btn {
+    padding: 0 32px; }
+  footer .btn-group .btn {
+    margin: 0 24px 0 0;
+    border-radius: 16px; }
+    footer .btn-group .btn:last-child, footer .btn-group .btn:first-child {
+      border-radius: 16px; }
+    footer .btn-group .btn:last-child {
+      margin: 0; }
+  footer .btn-group .btn:not(:last-child):not(.dropdown-toggle) {
+    border-radius: 16px; }
+  footer .mail {
+    margin: 32px 0 8px;
+    font-size: 24px;
+    color: #fff; }
+    footer .mail:hover {
+      color: #C6916A; }
+
+.description-company {
+  margin: 40px 0;
+  color: #808080;
+  font-size: 16px;
+  max-width: 384px; }
+
+.copyright-box {
+  margin: 57px 0 0; }
+
+.copyright {
+  margin: 0 0 16px; }
+
+.footer-menu {
+  margin: 0 0 127px;
+  width: 100%; }
+  .footer-menu li {
+    margin: 0 0 16px; }
+    .footer-menu li:last-child {
+      margin: 0; }
+    .footer-menu li a {
+      color: #fff; }
+      .footer-menu li a:hover {
+        color: #C6916A; }
+
+.phone-mobile {
+  color: #fff;
+  font-size: 40px;
+  margin: 0 0 8px; }
+  .phone-mobile:hover {
+    color: #C6916A; }
+
+.footer-col {
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.developer-web {
+  margin: 42px 0 0 auto; }
+
+/*==========  footer end  ==========*/
 /*==========  section  ==========*/
 /*==========  section end  ==========*/

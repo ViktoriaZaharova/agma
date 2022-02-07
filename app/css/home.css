@@ -413,8 +413,170 @@
           justify-content: center; }
 
 /*==========  section end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
+/*==========  section specialists  ==========*/
+.specialists {
+  padding: 0 0 150px; }
+
+.specialists-content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 135px 0 0; }
+  .specialists-content .box-text {
+    margin: auto 0 0;
+    font-size: 32px;
+    font-weight: 600; }
+  .specialists-content h2 span {
+    display: block;
+    margin: 0 0 72px;
+    line-height: 192px;
+    font-size: 252px; }
+
+.specialists-img {
+  min-width: 1073px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: left;
+  margin: 0 0 0 50px; }
+  .specialists-img img {
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+            transform: matrix(-1, 0, 0, 1, 0, 0); }
+
+/*==========  section specialists end  ==========*/
+/*==========  section ages  ==========*/
+.ages-images {
+  max-width: 100%; }
+  .ages-images img {
+    width: 100%; }
+
+.logo-slogan {
+  font-family: 'SegoeScript', sans-serif;
+  -webkit-transform: rotate(-3.85deg);
+          transform: rotate(-3.85deg);
+  font-size: 63px;
+  line-height: 59px;
+  max-width: 360px;
+  margin: -35px 30px 80px auto; }
+
+.logo-img {
+  margin: 0 0 0 30px;
+  max-width: 453px; }
+  .logo-img img {
+    -webkit-filter: invert(1);
+            filter: invert(1); }
+
+.ages-img {
+  width: 100%;
+  height: 472px; }
+  .ages-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.ages-content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .ages-content .box-text {
+    margin: 80px 0 auto;
+    font-size: 32px;
+    line-height: 56px; }
+  .ages-content span {
+    font-size: 24px; }
+  .ages-content h2 {
+    margin: 0 0 32px; }
+
+/*==========  section ages end  ==========*/
+/*==========  section sales ==========*/
+.sale-card {
+  width: 100%;
+  margin: 0 0 60px; }
+  .sale-card__img {
+    width: 100%;
+    height: 286px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .sale-card__img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .sale-card__body {
+    width: 100%;
+    padding: 24px 0 0; }
+  .sale-card__date {
+    color: #808080;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 8px; }
+  .sale-card__title {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600; }
+    .sale-card__title:hover {
+      color: #C6916A; }
+
+.sales-slider {
+  margin: 0 -30px; }
+  .sales-slider .slide {
+    padding: 0 30px; }
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000; }
+  .links:hover {
+    color: #C6916A; }
+    .links:hover .links-icon {
+      stroke: #C6916A; }
+  .links .links-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 0 16px;
+    stroke: #000;
+    width: 18px;
+    height: 22px;
+    min-width: 18px;
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
+
+/*==========  section sales end  ==========*/
 /*==========  section  ==========*/
 /*==========  section end  ==========*/
 /*==========  section  ==========*/
