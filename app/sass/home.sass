@@ -146,6 +146,8 @@
       &:hover
         background: #FBFAF9
         color: #000
+    .active
+      background: #FBFAF9
 
 .btn-link
   margin: 32px 0
@@ -205,7 +207,8 @@
   height: 100%
   padding: 16px 16px 24px
   font-size: 14px
-
+  border: 2px solid transparent
+  transition: .3s ease
   &__img
     display: flex
     align-items: center
@@ -234,6 +237,9 @@
 
   .links-arrow
     margin: 16px 0 0
+  &:hover
+    border: 2px solid #FBFAF9
+
 /*==========  section popular end  ==========*/
 
 
@@ -379,6 +385,7 @@
 
 .workshops-img
   min-width: 848px
+  height: 903px
   display: flex
   align-items: center
   justify-content: center
@@ -386,6 +393,8 @@
   float: right
   img
     width: 100%
+    height: 100%
+    object-fit: cover
 /*==========  section workshops end  ==========*/
 
 
@@ -433,12 +442,16 @@
 
 .specialists-img
   min-width: 1073px
+  height: 1020px
   display: flex
   align-items: center
   justify-content: center
   float: left
   margin: 0 0 0 -70px
   img
+    width: 100%
+    height: 100%
+    object-fit: cover
     transform: matrix(-1, 0, 0, 1, 0, 0)
 /*==========  section specialists end  ==========*/
 
@@ -484,8 +497,6 @@
     font-size: 24px
   h2
     margin: 0 0 32px
-
-
 /*==========  section ages end  ==========*/
 
 

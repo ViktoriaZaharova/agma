@@ -33,6 +33,7 @@ footer {
   footer .mail {
     margin: 32px 0 8px;
     font-size: 24px;
+    line-height: 56px;
     color: #fff; }
     footer .mail:hover {
       color: #C6916A; }
@@ -64,7 +65,9 @@ footer {
 .phone-mobile {
   color: #fff;
   font-size: 40px;
-  margin: 0 0 8px; }
+  line-height: 56px;
+  margin: 0 0 8px;
+  white-space: nowrap; }
   .phone-mobile:hover {
     color: #C6916A; }
 

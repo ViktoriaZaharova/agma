@@ -52,14 +52,21 @@ header
     .btn-border
       color: #000
       border-color: #000
+      &:hover, &:focus
+        border: 1px solid #000
+        color: #000
+        background: transparent
     .dropdown-toggle
       &:hover, &:focus
-        color: inherit
-        border-color: inherit
+        border: 1px solid #000
+        color: #000
+        background: transparent
       &::after
         background: url("data:image/svg+xml,%3Csvg width='16' height='9' viewBox='0 0 16 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L8 7L15 1' stroke='black' stroke-width='2'/%3E%3C/svg%3E%0A") no-repeat center
           size: 100%
-
+    .show > .btn-secondary.dropdown-toggle
+      border: 1px solid #000
+      color: #000
 
 .header
   background: #fff
@@ -88,12 +95,19 @@ header
     margin: 0 32px 0 0
     &:last-child
       margin: 0
-    a
+    >a
       color: #fff
       padding: 8px 16px
       display: flex
       align-items: center
       flex-wrap: wrap
+    .dropdown-item
+      padding: 0
+      margin: 0 0 20px
+      &:last-child
+        margin: 0
+  .dropdown
+    display: none
 
 .btn-catalog__icon
   display: flex
