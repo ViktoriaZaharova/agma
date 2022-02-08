@@ -7,6 +7,13 @@
   src: url("../fonts/SegoeScript/SegoeScript.eot");
   src: url("../fonts/SegoeScript/SegoeScript.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeScript/SegoeScript.woff") format("woff"), url("../fonts/SegoeScript/SegoeScript.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "Proxima";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Proxima/ProximaNova-Regular.eot");
+  src: url("../fonts/Proxima/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima/ProximaNova-Regular.woff") format("woff"), url("../fonts/Proxima/ProximaNova-Regular.ttf") format("truetype"); }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -230,8 +237,7 @@ button, .btn {
 h2, h1 {
   width: 100%;
   font-size: 64px;
-  font-weight: bold;
-  letter-spacing: 1.6px; }
+  font-weight: bold; }
 
 .container {
   max-width: 1560px; }
@@ -383,7 +389,7 @@ strong, b {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 8px 10px;
+  padding: 5px 10px;
   border-radius: 30px;
   background: #fff;
   font-size: 16px; }

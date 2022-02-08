@@ -38,6 +38,16 @@
       <div class="col-12 d-flex flex-wrap align-items-center">
         <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
+        <div class="btn-menu">
+          <div class="btn-menu__icon">
+            <svg class="svg-icon">
+              <use
+                  xlink:href="img/sprite.svg#burger"></use>
+            </svg>
+          </div>
+          <div class="btn-menu__text">Меню</div>
+        </div>
+
         <ul class="menu ul-my">
           <li><a href="#" class="btn-catalog">
             <span class="btn-catalog__icon"><svg class="svg-icon"><use
@@ -45,7 +55,8 @@
             <span class="btn-catalog__text">Каталог</span>
           </a></li>
           <li class="dropdown">
-            <a class="btn btn-secondary btn-border dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="btn btn-secondary btn-border dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
               Информация
             </a>
             <div class="dropdown-menu">
@@ -94,7 +105,8 @@
         <div class="dropdown">
           <a class="btn btn-secondary btn-border dropdown-toggle" href="#" role="button"
              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Связаться с нами
+            <span class="text-pc">Связаться с нами</span>
+            <span class="text-mobile">Связаться</span>
           </a>
 
           <div class="dropdown-menu dropdown-menu-contacts">
@@ -125,7 +137,7 @@
 <main class="home">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-8">
+      <div class="col-12 col-lg-xl">
         <h1><span>с 2000 года</span>
           Ведущий производитель погонажных изделий в России</h1>
 
@@ -190,8 +202,8 @@
     </div>
 
     <div class="row">
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="card-product">
+      <div class="col-12 col-md-6 col-xl-3 mb-15">
+        <div class="card-product card-product1">
           <a href="#" class="card-product__img"><img src="img/product1.png" alt=""></a>
           <div class="card-product__body">
             <a href="#" class="card-product__name">Фигурные погонажные изделия</a>
@@ -205,8 +217,8 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="card-product">
+      <div class="col-12 col-md-6 col-xl-3 mb-15">
+        <div class="card-product card-product2">
           <a href="#" class="card-product__img"><img src="img/product2.png" alt=""></a>
           <div class="card-product__body">
             <a href="#" class="card-product__name">Стандартные погонажные изделия</a>
@@ -220,8 +232,8 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="card-product">
+      <div class="col-12 col-md-6 col-xl-3 mb-15">
+        <div class="card-product card-product3">
           <a href="#" class="card-product__img"><img src="img/product3.png" alt=""></a>
           <div class="card-product__body">
             <a href="#" class="card-product__name">Телескопические погонажные изделия</a>
@@ -235,8 +247,8 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="card-product">
+      <div class="col-12 col-md-6 col-xl-3 mb-15">
+        <div class="card-product card-product4">
           <a href="#" class="card-product__img"><img src="img/product4.png" alt=""></a>
           <div class="card-product__body">
             <a href="#" class="card-product__name">Дверные <br>
@@ -265,7 +277,7 @@
     </div>
 
     <div class="row">
-      <div class="col-12 col-lg-3">
+      <div class="col-12 col-xl-3">
         <div class="sidebar">
           <ul class="popular-category ul-my">
             <li><a href="#" class="active">Фигурные погонажные изделия</a></li>
@@ -274,9 +286,9 @@
             <li><a href="#">Дверные полотна</a></li>
           </ul>
 
-          <a href="#" class="btn btn-black btn-link">Перейти в каталог</a>
+          <a href="#" class="btn btn-black btn-link d-none d-xl-flex">Перейти в каталог</a>
 
-          <div class="catalog-banner">
+          <div class="catalog-banner d-none d-xl-block">
             <div class="catalog-banner__content">
               <h4>Электронный
                 продукции 2021</h4>
@@ -293,10 +305,11 @@
         </div>
       </div>
 
-      <div class="col-12 col-lg-9">
+      <div class="col-12 col-xl-9">
         <div class="row">
-          <div class="col-12 col-sm-6 col-lg-4 mb-60">
+          <div class="col-6 col-md-3 col-xl-4 mb-60 d-none d-sm-block">
             <div class="product-card">
+              <div class="product-card__label">Новинка</div>
               <a href="product.html" class="product-card__img"><img src="img/img-product1.png" alt=""></a>
               <div class="product-card__body">
                 <div class="product-card__subtitle">Фигурный погонаж</div>
@@ -314,8 +327,9 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-60">
+          <div class="col-6 col-md-3 col-xl-4 mb-60 d-none d-sm-block">
             <div class="product-card">
+              <div class="product-card__label">Новинка</div>
               <a href="product.html" class="product-card__img"><img src="img/img-product2.png" alt=""></a>
               <div class="product-card__body">
                 <div class="product-card__subtitle">Фигурный погонаж</div>
@@ -333,8 +347,9 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-60">
+          <div class="col-6 col-md-3 col-xl-4 mb-60 d-none d-sm-block">
             <div class="product-card">
+              <div class="product-card__label">Новинка</div>
               <a href="product.html" class="product-card__img"><img src="img/img-product3.png" alt=""></a>
               <div class="product-card__body">
                 <div class="product-card__subtitle">Фигурный погонаж</div>
@@ -352,8 +367,9 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-60">
+          <div class="col-6 col-md-3 col-xl-4 mb-60 d-none d-sm-block">
             <div class="product-card">
+              <div class="product-card__label">Новинка</div>
               <a href="product.html" class="product-card__img"><img src="img/img-product3.png" alt=""></a>
               <div class="product-card__body">
                 <div class="product-card__subtitle">Фигурный погонаж</div>
@@ -371,8 +387,9 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-60">
+          <div class="col-6 col-md-3 col-xl-4 mb-60  d-none d-sm-block">
             <div class="product-card">
+              <div class="product-card__label">Новинка</div>
               <a href="product.html" class="product-card__img"><img src="img/img-product4.png" alt=""></a>
               <div class="product-card__body">
                 <div class="product-card__subtitle">Фигурный погонаж</div>
@@ -390,8 +407,9 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-60">
+          <div class="col-6 col-md-3 col-xl-4 mb-60  d-none d-sm-block">
             <div class="product-card">
+              <div class="product-card__label">Новинка</div>
               <a href="product.html" class="product-card__img"><img src="img/img-product1.png" alt=""></a>
               <div class="product-card__body">
                 <div class="product-card__subtitle">Фигурный погонаж</div>
@@ -409,8 +427,9 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-60">
+          <div class="col-6 col-md-3 col-xl-4 mb-60">
             <div class="product-card">
+              <div class="product-card__label">Новинка</div>
               <a href="product.html" class="product-card__img"><img src="img/img-product1.png" alt=""></a>
               <div class="product-card__body">
                 <div class="product-card__subtitle">Фигурный погонаж</div>
@@ -428,8 +447,9 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-60">
+          <div class="col-6 col-md-3 col-xl-4 mb-60">
             <div class="product-card">
+              <div class="product-card__label">Новинка</div>
               <a href="product.html" class="product-card__img"><img src="img/img-product2.png" alt=""></a>
               <div class="product-card__body">
                 <div class="product-card__subtitle">Фигурный погонаж</div>
@@ -447,8 +467,27 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-60">
+
+          <div class="col-12 d-block d-xl-none">
+            <div class="catalog-banner">
+              <div class="catalog-banner__content">
+                <h4>Электронный
+                  продукции 2021</h4>
+
+                <a href="#" class="links-download">
+                  <span class="links-download__text">Скачать</span>
+                  <span class="links-download__icon"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#download-icon"></use></svg></span>
+                  <span class="format-document">PDF</span>
+                </a>
+              </div>
+              <div class="catalog-banner__bg"><img src="img/banner-img.png" alt=""></div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 col-xl-4 mb-60">
             <div class="product-card">
+              <div class="product-card__label">Новинка</div>
               <a href="product.html" class="product-card__img"><img src="img/img-product3.png" alt=""></a>
               <div class="product-card__body">
                 <div class="product-card__subtitle">Фигурный погонаж</div>
@@ -466,8 +505,9 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-60">
+          <div class="col-6 col-md-3 col-xl-4 mb-60">
             <div class="product-card">
+              <div class="product-card__label">Новинка</div>
               <a href="product.html" class="product-card__img"><img src="img/img-product3.png" alt=""></a>
               <div class="product-card__body">
                 <div class="product-card__subtitle">Фигурный погонаж</div>
@@ -485,8 +525,9 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-60">
+          <div class="col-6 col-md-3 col-xl-4 mb-60">
             <div class="product-card">
+              <div class="product-card__label">Новинка</div>
               <a href="product.html" class="product-card__img"><img src="img/img-product4.png" alt=""></a>
               <div class="product-card__body">
                 <div class="product-card__subtitle">Фигурный погонаж</div>
@@ -504,8 +545,9 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-60">
+          <div class="col-6 col-md-3 col-xl-4 mb-60">
             <div class="product-card">
+              <div class="product-card__label">Новинка</div>
               <a href="product.html" class="product-card__img"><img src="img/img-product1.png" alt=""></a>
               <div class="product-card__body">
                 <div class="product-card__subtitle">Фигурный погонаж</div>
@@ -522,6 +564,10 @@
                 </a>
               </div>
             </div>
+          </div>
+
+          <div class="col-12 d-block d-xl-none">
+            <a href="#" class="btn btn-black btn-link">Перейти в каталог</a>
           </div>
         </div>
       </div>
@@ -543,57 +589,57 @@
     </div>
 
     <div class="row">
-      <div class="col-12 col-sm-3 mb-60">
+      <div class="col-6 col-sm-4 col-xl-3 mb-60">
         <div class="profitable-terms-box">
           <p>Собственная производственная база </p>
         </div>
       </div>
-      <div class="col-12 col-sm-3 mb-60">
+      <div class="col-6 col-sm-4 col-xl-3 mb-60">
         <div class="profitable-terms-box">
           <p>Низкие конкурентные цены </p>
         </div>
       </div>
-      <div class="col-12 col-sm-3 mb-60">
+      <div class="col-6 col-sm-4 col-xl-3 mb-60">
         <div class="profitable-terms-box">
           <p>Высокое качество выпускаемой продукции</p>
         </div>
       </div>
-      <div class="col-12 col-sm-3 mb-60">
+      <div class="col-6 col-sm-4 col-xl-3 mb-60">
         <div class="profitable-terms-box">
           <p>Сопровождение клиента с вниманием к каждому</p>
         </div>
       </div>
-      <div class="col-12 col-sm-3 mb-60">
+      <div class="col-6 col-sm-4 col-xl-3 mb-60">
         <div class="profitable-terms-box">
           <p>Постоянное улучшение качества сервиса и обслуживания</p>
         </div>
       </div>
-      <div class="col-12 col-sm-3 mb-60">
+      <div class="col-6 col-sm-4 col-xl-3 mb-60">
         <div class="profitable-terms-box">
           <p>Большой и обновляемый ассортимент всегда на складе</p>
         </div>
       </div>
-      <div class="col-12 col-sm-3 mb-60">
+      <div class="col-6 col-sm-4 col-xl-3 mb-60">
         <div class="profitable-terms-box">
           <p>Короткие сроки изготовления </p>
         </div>
       </div>
-      <div class="col-12 col-sm-3 mb-60">
+      <div class="col-6 col-sm-4 col-xl-3 mb-60">
         <div class="profitable-terms-box">
           <p>Профессиональный подход </p>
         </div>
       </div>
-      <div class="col-12 col-sm-3 mb-60">
+      <div class="col-6 col-sm-4 col-xl-3 mb-60">
         <div class="profitable-terms-box">
           <p>Индивидуальные условия работы </p>
         </div>
       </div>
-      <div class="col-12 col-sm-3 mb-60">
+      <div class="col-6 col-sm-4 col-xl-3 mb-60">
         <div class="profitable-terms-box">
           <p>Скидки для постоянных клиентов </p>
         </div>
       </div>
-      <div class="col-12 col-sm-3 mb-60">
+      <div class="col-6 col-sm-4 col-xl-3 mb-60">
         <div class="profitable-terms-box">
           <p>Персональный менеджер </p>
         </div>
@@ -610,14 +656,14 @@
           </div>
 
           <div class="row">
-            <div class="col-12 col-lg-4 mb-40">
+            <div class="col-12 col-xl-4 mb-40">
               <label class="box-input">
                 <input type="text" name="name" required>
                 <span class="input-text">Ваше имя</span>
               </label>
             </div>
 
-            <div class="col-12 col-lg-4 mb-40">
+            <div class="col-12 col-xl-4 mb-40">
               <label class="box-input">
                 <input type="text" name="phone" required>
                 <span class="input-text">Телефон</span>
@@ -629,6 +675,7 @@
             <div class="col-12">
               <button type="submit" class="btn btn-black">
                 <span class="btn-text">Отправить заявку на сотрудничество</span>
+                <span class="btn-text-mobile">Отправить заявку</span>
                 <span class="btn-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
               </button>
             </div>
@@ -645,9 +692,14 @@
 <section class="production">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-6">
+      <div class="col-12 d-block d-xl-none">
+        <h2>Производство полного цикла — экологичное <br>
+          и без отходное</h2>
+      </div>
+
+      <div class="col-12 col-md-6">
         <div class="production-content">
-          <h2>Производство полного цикла — экологичное <br>
+          <h2 class="d-none d-xl-block">Производство полного цикла — экологичное <br>
             и без отходное</h2>
           <div class="box-text">
             <p>Технологический цикл, поточные линии, производство упаковки, собственный логистический терминал,
@@ -662,7 +714,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-md-6">
         <div class="production-wrapper slider">
           <div class="production-slider">
             <div class="slide">
@@ -695,10 +747,7 @@
 <section class="workshops m-150">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-6">
-        <div class="workshops-img"><img src="img/slide3.png" alt=""></div>
-      </div>
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-md-7 col-xl-6 order-md-1">
         <div class="workshops-content">
           <h2>6</h2>
           <h3>цехов
@@ -706,6 +755,11 @@
             высокое качество продукции</h3>
         </div>
       </div>
+
+      <div class="col-12 col-md-5 col-xl-6">
+        <div class="workshops-img"><img src="img/slide3.png" alt=""></div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -716,7 +770,7 @@
 <div class="production-composition m-150">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-sm-6 col-lg-3">
+      <div class="col-12 col-sm-6 col-xl-3">
         <div class="production-composition-box">
           <div class="production-composition-box__icon"><img src="img/icon1.svg" alt=""></div>
           <div class="production-composition__text">
@@ -728,7 +782,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-lg-3">
+      <div class="col-12 col-sm-6 col-xl-3">
         <div class="production-composition-box">
           <div class="production-composition-box__icon"><img src="img/icon2.svg" alt=""></div>
           <div class="production-composition__text">
@@ -740,7 +794,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-lg-3">
+      <div class="col-12 col-sm-6 col-xl-3">
         <div class="production-composition-box">
           <div class="production-composition-box__icon"><img src="img/icon3.svg" alt=""></div>
           <div class="production-composition__text">
@@ -752,7 +806,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-lg-3">
+      <div class="col-12 col-sm-6 col-xl-3">
         <div class="production-composition-box">
           <div class="production-composition-box__icon"><img src="img/icon4.svg" alt=""></div>
           <div class="production-composition__text">
@@ -775,20 +829,24 @@
 <section class="specialists section-decor-line">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-6 col-xl-7">
+      <div class="col-12 col-xl-7">
         <div class="specialists-content">
           <h2>
             <span>170</span>
             квалифицированных
             специалистов
             на предприятии</h2>
-          <div class="box-text">
+          <div class="box-text d-none d-xl-block">
             <p>Вся продукция проходит тщательную проверку дипломированными специалистами отдела контроля качества</p>
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-6 col-xl-5">
+      <div class="col-12 col-xl-5">
         <div class="specialists-img"><img src="img/slide4.png" alt=""></div>
+
+        <div class="box-text d-block d-xl-none">
+          <p>Вся продукция проходит тщательную проверку дипломированными специалистами отдела контроля качества</p>
+        </div>
       </div>
     </div>
   </div>
@@ -800,7 +858,7 @@
 <section class="ages section-decor-line p-150">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-5">
+      <div class="col-12 col-xl-5">
         <div class="ages-images">
           <div class="logo-wrapper">
             <div class="logo-img"><img src="img/logo.svg" alt=""></div>
@@ -811,7 +869,7 @@
           <div class="ages-img"><img src="img/age-img.jpeg" alt=""></div>
         </div>
       </div>
-      <div class="col-12 col-lg-7">
+      <div class="col-12 col-xl-7">
         <div class="ages-content">
           <h2>8 лет</h2>
           <span>мы помогаем детям обрести здоровое будущее</span>
@@ -905,6 +963,11 @@
               <div class="sale-card__body">
                 <div class="sale-card__date">14 Сентябрь, 2017</div>
                 <a href="sales.html" class="sale-card__title">Большая распродажа продукции</a>
+
+                <div class="box-text">
+                  <p>Автоматическая отделочная линия укомплектована оборудованием обеспечивает высокую
+                    производительность и отличное качество отделки</p>
+                </div>
               </div>
             </div>
           </div>
@@ -916,6 +979,11 @@
               <div class="sale-card__body">
                 <div class="sale-card__date">14 Сентябрь, 2017</div>
                 <a href="sales.html" class="sale-card__title">Акция! Распродажа погонажа</a>
+
+                <div class="box-text">
+                  <p>Автоматическая отделочная линия укомплектована оборудованием обеспечивает высокую
+                    производительность и отличное качество отделки</p>
+                </div>
               </div>
             </div>
           </div>
@@ -926,6 +994,10 @@
               <div class="sale-card__body">
                 <div class="sale-card__date">14 Сентябрь, 2017</div>
                 <a href="sales.html" class="sale-card__title">Осенняя распродажа дверей</a>
+                <div class="box-text">
+                  <p>Автоматическая отделочная линия укомплектована оборудованием обеспечивает высокую
+                    производительность и отличное качество отделки</p>
+                </div>
               </div>
             </div>
           </div>
@@ -948,7 +1020,7 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-4">
+      <div class="col-12 col-sm-6 col-lg-7 col-xl-4">
         <div class="footer-box">
           <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
           <div class="description-company">AGMA - фабрика дверей, ведущий производитель погонажных изделий в России
@@ -961,15 +1033,29 @@
           </a>
         </div>
 
-        <div class="copyright-box">
+        <div class="copyright-box d-none d-xl-none">
           <div class="copyright">2021 © ООО “АГМА” Все права защищены</div>
 
           <a href="#" class="links-grey text-decoration" target="_blank">Политика конфиденциальности</a>
         </div>
       </div>
 
-      <div class="col-12 col-lg-5">
-        <div class="row">
+      <div class="col-12 col-sm-6 col-lg-5 col-xl-3 order-xl-1">
+        <div class="footer-col">
+          <a href="tel:+79644925935" class="phone-mobile">8 964 492 59 35</a>
+
+          <a href="#" class="btn btn-border" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a>
+
+          <a href="mailto:agmainfo@yandex.ru" class="mail">agmainfo@yandex.ru</a>
+
+          <a href="#" class="btn btn-border" data-toggle="modal" data-target="#callbackModal">Написать нам</a>
+        </div>
+
+        <a href="#" class="developer-web links-grey d-none d-xl-flex" target="_blank">Разработка сайта LYNXOFT</a>
+      </div>
+
+      <div class="col-12 col-xl-5">
+        <div class="row d-none d-sm-block">
           <div class="col-12 col-lg-7 col-menu">
             <ul class="footer-menu ul-my">
               <li><a href="catalog2.html">Фигурные погонажные изделия</a></li>
@@ -1003,25 +1089,41 @@
         </div>
       </div>
 
-      <div class="col-12 col-lg-3">
-        <div class="footer-col">
-          <a href="tel:+79644925935" class="phone-mobile">8 964 492 59 35</a>
+    </div>
 
-          <a href="#" class="btn btn-border" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a>
+    <div class="row d-flex d-xl-none align-items-center">
+      <div class="col-12 col-sm-7 col-lg-6">
+        <div class="copyright-box">
+          <div class="copyright">2021 © ООО “АГМА” Все права защищены</div>
 
-          <a href="mailto:agmainfo@yandex.ru" class="mail">agmainfo@yandex.ru</a>
-
-          <a href="#" class="btn btn-border" data-toggle="modal" data-target="#callbackModal">Написать нам</a>
+          <a href="#" class="links-grey text-decoration" target="_blank">Политика конфиденциальности</a>
         </div>
-
+      </div>
+      <div class="col-12 col-sm-5 col-lg-6">
         <a href="#" class="developer-web links-grey" target="_blank">Разработка сайта LYNXOFT</a>
       </div>
     </div>
   </div>
+
 </footer>
 
 <!--### FOOTER END ###-->
 
+
+<div class="fixed-menu">
+  <div class="fixed-menu-btn">
+    <div class="fixed-menu-btn__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#burger"></use></svg></div>
+    <div class="fixed-menu-btn__text">Меню</div>
+  </div>
+
+  <div class="fixed-menu-btn search-links">
+    <div class="fixed-menu-btn__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></div>
+    <div class="fixed-menu-btn__text">Поиск</div>
+  </div>
+  <a href="tel:+79644925935" class="phone-links">
+    <div class="fixed-menu-btn__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#phone3"></use></svg></div>
+  </a>
+</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

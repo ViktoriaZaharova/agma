@@ -39,3 +39,18 @@ $(document).ready(function () {
 // });
 
 
+// slick active
+$(window).on('load resize', function() {
+    if ($(window).width() < 576) {
+        $('.slider-mobile:not(.slick-initialized)').slick({
+            speed: 100,
+            slidesToShow: 1,
+            arrows: false,
+            variableWidth: true,
+
+        });
+    } else {
+        $(".slider-mobile.slick-initialized").slick("unslick");
+    }
+});
+// slick active

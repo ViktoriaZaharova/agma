@@ -3,19 +3,25 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1600px)
+@media only screen and (max-width: 1600px)
   .menu li
     margin: 0 16px 0 0
 
   .btn-search
     margin: 0 0 0 16px
 
-@media only screen and (max-width : 1580px)
+  .profitable-terms
+    &:before
+      right: -559px
+      bottom: -149px
+
+@media only screen and (max-width: 1580px)
   .container
     max-width: 1392px
 
   header
     padding: 23px 0 34px
+
     .container
       max-width: 1510px
 
@@ -28,8 +34,6 @@
   .section-decor-line:before
     max-width: 1362px
 
-  .profitable-terms:before
-    right: -220px
 
   .production-slider__item
     min-width: 826px
@@ -79,12 +83,20 @@
   .ages-img
     height: 417px
 
+  .sales-slider
+    margin: 0 -15px
 
-@media only screen and (max-width : 1430px)
+    .slide
+      padding: 0 15px
+
+
+@media only screen and (max-width: 1430px)
   .menu
     margin: 0 auto 0 16px
+
     .nav-item
       display: none
+
     .dropdown
       display: flex
 
@@ -92,8 +104,7 @@
     margin: 0 36.5px
 
 
-
-@media only screen and (max-width : 1350px)
+@media only screen and (max-width: 1350px)
   h1
     font-size: 60px
     line-height: 72px
@@ -101,6 +112,9 @@
   h2
     font-size: 60px
     line-height: 72px
+
+  h3
+    font-size: 28px
 
   .container
     max-width: 1200px
@@ -139,9 +153,9 @@
   .profitable-terms
     padding: 100px 0
 
-  .profitable-terms:before
-    right: -260px
-
+    &:before
+      right: -600px
+      bottom: -255px
 
   .production-slider__item
     min-width: 975px
@@ -149,6 +163,7 @@
 
   .production
     margin: 150px 0 128px
+
     .box-text
       margin: 100px 0
       font-size: 28px
@@ -161,6 +176,7 @@
   .workshops-img
     min-width: 607px
     margin: 0 55px 0 0
+
     img
       width: 100%
       height: 100%
@@ -169,6 +185,7 @@
   .workshops-content
     h3
       font-size: 60px
+
     h2
       font-size: 200px
 
@@ -187,6 +204,7 @@
     h2
       span
         font-size: 200px
+
     .box-text
       font-size: 28px
 
@@ -206,6 +224,7 @@
     .box-text
       font-size: 28px
       line-height: 48px
+
     h2
       margin: 0 0 24px
 
@@ -233,6 +252,7 @@
     width: 100%
     max-width: none
     margin-bottom: 30px
+
     &:first-child
       margin-bottom: 16px
 
@@ -240,53 +260,793 @@
     margin: 49px 0 0 auto
 
 
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width: 1200px)
+  header
+    .menu
+      display: none
 
+    &.fixed
+      .btn-menu
+        color: #000
+
+        &__icon
+          fill: #000
+
+  .btn-menu
+    display: flex
+    margin: 0 16px
+
+  .documents-links
+    margin: 0 auto
+
+  .mb-15
+    margin-bottom: 15px
+
+  .card-product
+    position: relative
+
+    &__name
+      br
+        display: none
+
+    &__img
+      justify-content: flex-end
+      position: absolute
+
+    &__body
+      padding: 177px 32px 32px 32px
+
+  .card-product1
+    .card-product__img
+      top: -125px
+      right: -8px
+
+  .card-product2
+    .card-product__img
+      top: -80px
+      right: -8px
+
+  .card-product3
+    .card-product__img
+      top: -78px
+      right: 0
+
+  .card-product4
+    .card-product__img
+      top: -130px
+      right: 0
+
+  .popular
+    margin: 100px 0
+
+    h3
+      font-size: 48px
+
+  .catalog-banner
+    width: 100%
+    margin: 0 0 30px
+    padding: 40px 40px 32px
+    background: #FBFAF9
+
+    &__content
+      max-width: 210px
+
+    h4
+      margin: 0 0 24px
+
+  .catalog-banner__bg
+    left: auto
+    right: -85px
+    transform: none
+    top: -130px
+    bottom: auto
+    background: linear-gradient(90deg, #FBFAF9 0%, rgba(251, 250, 249, 0) 16.69%)
+
+  .popular-category
+    display: flex
+    flex-direction: row
+    align-items: stretch
+    flex-wrap: nowrap
+
+    li
+      margin: 0 10px 0 0
+      width: 256px
+      min-width: 256px
+
+  .sidebar
+    max-width: none
+    overflow-y: auto
+    width: calc(100% + 80px)
+    margin: 0 0 30px
+
+  .popular .mb-60
+    margin-bottom: 30px
+
+  .btn-link
+    margin: 0 auto
+
+  .profitable-terms
+    &:before
+      right: -615px
+      bottom: -126px
+
+    .mb-60
+      margin-bottom: 40px
+
+  .profitable-terms-box
+    font-size: 16px
+    line-height: 24px
+
+  h3
+    font-size: 20px
+
+  .form-callback
+    max-width: 528px
+
+    .mb-60
+      margin-bottom: 60px
+
+    .mb-40
+      margin-bottom: 30px
+
+    button
+      margin: 10px 0 0
+
+  .production-slider__item
+    min-width: 690px
+    height: 507px
+
+  .production
+    margin: 100px 0 150px
+
+    h2
+      margin: 0 0 71px
+
+      br
+        display: none
+
+    .box-text
+      margin: 0 0 auto
+      font-size: 20px
+      line-height: 32px
+
+  .square
+    p
+      font-size: 16px
+
+      sup
+        font-size: 50px
+
+    strong
+      font-size: 40px
+      line-height: 56px
+
+
+  .production-wrapper
+    margin: 0
+
+  .workshops
+    padding: 0
+
+  .workshops-img
+    min-width: 455px
+    margin: 0
+    height: 715px
+
+  .workshops-content
+    padding: 0 0 0 25px
+
+    h2
+      margin: 0 0 56px
+      font-size: 100px
+      line-height: 100%
+
+    h3
+      font-size: 48px
+      line-height: 56px
+
+  .production-composition
+    margin: 100px 0 120px
+
+  .production-composition-box
+    margin: 0 0 30px
+
+    h3
+      font-size: 20px
+      line-height: 28px
+
+  .specialists-content
+    padding: 0
+    margin: 0 0 72px
+
+    h2
+      display: flex
+      align-items: flex-start
+
+      span
+        display: inline-block
+        margin: 0 72px 0 0
+        font-size: 100px
+        line-height: 100px
+
+  .specialists-img
+    margin: 0 0 72px
+    min-width: auto
+    width: 100%
+    height: auto
+
+  .specialists
+    padding: 0 0 100px
+
+    .box-text
+      font-size: 20px
+      max-width: 670px
+
+  .ages-images
+    display: flex
+    align-items: flex-start
+
+  .ages-img
+    width: 50%
+    height: 356px
+
+  .ages-content
+    padding: 0
+    margin: 40px 0 0
+
+    .box-text
+      margin: 50px 0
+      font-size: 20px
+      line-height: 32px
+
+  .logo-wrapper
+    width: 50%
+
+  .logo-img
+    margin: 0
+    max-width: 250px
+
+  .logo-slogan
+    font-size: 34px
+    line-height: 32px
+    margin: -20px 0 0 106px
+
+  .p-150
+    padding: 100px 0
+
+  .sale-card__title
+    font-size: 20px
+    line-height: 28px
+
+  .sale-card__date
+    margin: 0 0 16px
+
+  .sale-card__img
+    height: 196px
+
+  .sales
+    padding: 100px 0
+
+  .copyright-box
+    max-width: none
+    margin: 0
+
+  footer
+    padding: 100px 0
+
+    .btn-group
+      margin: 0 0 40px
+
+  .developer-web
+    margin: 0 0 0 auto
+
+  .description-company
+    max-width: 391px
+
+  .col-menu
+    margin-top: 40px
+
+    &:first-child
+      flex: 0 0 58.333333%
+      max-width: 58.333333%
+
+    &:last-child
+      flex: 0 0 41.666667%
+      max-width: 41.666667%
+
+  .text-pc
+    display: none
+
+  .text-mobile
+    display: block
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width: 1010px)
+  header
+    .container
+      max-width: 938px
+
+  .container
+    max-width: 837px
+
+  .section-decor-line:before
+    max-width: 807px
+
+  h1, h2
+    font-size: 48px
+    line-height: 56px
+
+  .home
+    padding: 271px 0 148px
+
+  .p-150
+    padding: 65px 0
+
+  .m-150
+    margin: 100px 0
+
+  .advantages-box
+    font-size: 16px
+    line-height: 24px
+
+  .productions
+
+    h2
+      margin: 0 auto 100px
+
+  .sales
+    padding: 100px 0
+
+    .box-text
+      line-height: 24px
+      margin: 16px 0 0
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+@media only screen and (max-width: 850px)
+  .documents-links
+    display: none
 
+  header
+    .dropdown
+      margin: 0 0 0 auto
+
+
+@media only screen and (max-width: 768px)
+  .container
+    max-width: 672px
+
+  header
+    .container
+      max-width: 700px
+
+  .home
+    padding: 243px 0 120px
+
+
+  .catalog-banner__bg
+    width: 656px
+    height: 492px
+    right: -250px
+    top: -130px
+
+  .form-callback
+    max-width: 421px
+
+    h3
+      font-size: 20px
+
+  .profitable-terms
+    &:before
+      right: -690px
+      bottom: -57px
+
+  .production-slider__item
+    height: 405px
+    min-width: auto
+    width: 100%
+
+  .production-slider
+    min-width: auto
+
+  .production
+    .box-text
+      margin: 50px 0
+
+    h2
+      margin: 0
+
+  .square
+    p
+      strong
+        font-size: 40px
+        line-height: 56px
+
+      sup
+        font-size: 30px
+
+  .production-wrapper
+    margin: 50px 0 0
+
+  .workshops
+    margin: 0
+
+  .workshops-img
+    margin: 60px 0 0
+    min-width: auto
+    width: 100%
+    height: 410px
+
+  .workshops-content
+    padding: 0
+    flex-direction: row
+    justify-content: space-between
+
+    h2
+      margin: 0
+      width: fit-content
+
+    h3
+      width: calc(100% - 114px)
+
+  .production-composition
+    margin: 100px 0 56px
+
+  .specialists-content
+    margin: 0 0 50px
+
+    h2
+      flex-direction: column
+      align-items: flex-start
+
+      span
+        margin: 0 0 30px
+
+  .specialists-img
+    margin: 0 0 50px
+
+  .section-decor-line:before
+    max-width: 642px
+
+  .ages
+    padding: 100px 0
+
+  .ages-images
+    flex-direction: column
+    align-items: flex-start
+
+  .logo-wrapper
+    width: 100%
+
+  .ages-img
+    width: 100%
+    height: 282px
+    margin: 60px 0 0
+
+  .sale-card__img
+    height: 167px
+
+  footer .btn-group
+    margin: 0 0 80px
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (max-width: 576px)
+  .p-150
+    padding: 50px 0
 
+  .mb-100
+    margin-bottom: 50px
+
+  h1, h2
+    font-size: 28px
+    line-height: 36px
+
+  h1 span
+    margin: 0 0 15px
+    font-size: 16px
+    line-height: 24px
+
+  header
+    padding: 22px 0
+
+    .dropdown
+      display: none
+
+  .header-links
+    margin: 0 0 0 auto
+
+  .popular
+    .mb-80
+      margin-bottom: 30px
+
+    h3
+      font-size: 28px
+      max-width: 180px
+
+  .footer-col
+    align-items: flex-start
+    text-align: left
+    margin: 50px 0
+
+  .phone-mobile
+    line-height: 36px
+    font-size: 28px
+    margin: 0 0 10px
+
+  footer
+    padding: 50px 0
+    .mail
+      margin: 20px 0 10px
+      font-size: 28px
+      line-height: 36px
+    .btn-group
+      margin: 0 0 50px
+    .logo
+      max-width: 125px
+
+  .developer-web
+    margin: 50px 0 0
+
+  .description-company
+    margin: 20px 0
+    max-width: 328px
+    font-size: 14px
+    line-height: 22px
+
+  .mb-60
+    margin-bottom: 30px
+
+  .sales
+    padding: 50px 0
+
+  .sale-card__img
+    height: 154px
+
+  .sale-card__title
+    font-size: 16px
+    line-height: 24px
+
+  .sales
+    .box-text
+      font-size: 14px
+      line-height: 22px
+
+  .sale-card
+    margin: 0 0 30px
+
+  .slider-mobile
+    flex-wrap: nowrap
+    margin: 0
+
+  .sales-slider
+    width: calc(100% + 15px)
+
+    .slide
+      width: 193px
+      padding: 0
+      margin: 0 30px 0 0
+
+  .ages
+    padding: 50px 0
+
+  .ages-content
+    .box-text
+      margin: 30px 0
+      line-height: 24px
+      font-size: 16px
+    span
+      font-size: 16px
+
+  .ages-img
+    height: 215px
+    margin: 40px 0 0
+
+  .specialists
+    padding: 0 0 50px
+    .box-text
+      font-size: 16px
+      line-height: 24px
+
+  .specialists-img
+    margin: 0 0 30px
+
+  .specialists-content
+    margin: 0 0 30px
+    h2
+      span
+        font-size: 72px
+        margin: 0 0 15px
+        line-height: 100%
+
+  .production-composition
+    margin: 30px 0 20px
+
+  .production-composition-box
+    font-size: 14px
+    .box-text
+      line-height: 22px
+    h3
+      margin: 15px 0
+      font-size: 16px
+
+  .workshops-content
+    flex-direction: column
+    align-items: flex-start
+    h2
+      margin: 0 0 15px
+      font-size: 72px
+      line-height: 100%
+    h3
+      width: 100%
+      font-size: 28px
+      line-height: 36px
+
+  .production
+    margin: 50px 0 73px
+    .box-text
+      margin: 30px 0
+      font-size: 16px
+      line-height: 24px
+
+  .production-wrapper
+    margin: 30px 0 0
+
+  .square span
+    margin: 0
+    font-size: 14px
+
+  .profitable-terms
+    padding: 50px 0
+    &:before
+      display: none
+    .mb-60
+      margin-bottom: 20px
+
+  .profitable-terms-box
+    font-size: 14px
+    line-height: 22px
+
+  .form-callback
+    max-width: none
+    h3
+      font-size: 16px
+      margin: 0 0 10px
+      line-height: 24px
+    .mb-60
+      margin-bottom: 20px
+    button
+      margin: 20px 0 0
+      width: 100%
+    .btn-text-mobile
+      display: block
+    .btn-text
+      display: none
+
+  .product-card
+    font-size: 12px
+    padding: 0
+    &__img
+      height: 150px
+    &__name
+      font-size: 14px
+    &__label
+      display: block
+    .box-text
+      margin: 10px 0 0
+
+  .catalog-banner__bg
+    width: 406px
+    height: 306px
+    right: -176px
+    top: -89px
+
+  .catalog-banner
+    padding: 20px
+    h4
+      font-size: 16px
+      line-height: 20px
+      margin: 0 0 20px
+    .links-download
+      font-size: 12px
+    .format-document
+      margin: 0 0 0 10px
+    &__content
+      max-width: 140px
+
+  .popular-category
+    font-size: 14px
+    li
+      width: 147px
+      min-width: 147px
+      a
+        padding: 15px 25px
+
+  .sidebar
+    width: calc(100% + 30px)
+
+  .productions
+    margin: 30px 0
+    h2
+      margin: 0 auto 30px
+
+  .card-product
+    height: auto
+    display: flex
+    flex-direction: row
+    align-items: center
+    &__img
+      left: auto
+      right: 0
+      top: 0
+      width: 212px
+      height: 100%
+      img
+        height: auto
+        width: auto
+        max-width: 100%
+
+    &__body
+      padding: 20px
+      width: calc(100% - 212px)
+    &__name
+      font-size: 16px
+      line-height: 24px
+    .links-arrow
+      margin: 20px 0 0
+
+
+
+  .card-product1
+    .card-product__img
+      width: 157px
+      height: 187px
+      right: -41px
+      top: -59px
+
+  .card-product2
+    .card-product__img
+      width: 179px
+      height: 100%
+      top: 0
+      right: 0
+
+  .card-product3
+    .card-product__img
+      width: 272px
+      height: 100%
+      top: -20px
+      right: -100px
+
+  .card-product4
+    .card-product__img
+      top: 0
+
+  .advantages
+    padding: 30px 0 10px
+
+  .advantages-box
+    margin: 0 0 20px
+    font-size: 14px
+    line-height: 22px
+
+  .home
+    padding: 112px 0 30px
+    .box-text
+      font-size: 14px
+      line-height: 22px
+      margin: 30px 0 0
+      max-width: 328px
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width: 480px)
+  .logo
+    max-width: 95px
 
+  header
+    .btn-menu, .btn-search
+      display: none
 
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-
+    .links-social
+      width: 26px
+      height: 26px
+      min-width: 26px

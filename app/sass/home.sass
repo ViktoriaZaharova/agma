@@ -86,9 +86,12 @@
     height: 271px
     display: flex
     align-items: center
-
+    justify-content: center
     img
-      background-blend-mode: darken
+      height: 100%
+      width: auto
+      max-width: none
+      mix-blend-mode: multiply
 
   &__body
     width: 100%
@@ -209,6 +212,7 @@
   font-size: 14px
   border: 2px solid transparent
   transition: .3s ease
+  position: relative
   &__img
     display: flex
     align-items: center
@@ -239,6 +243,17 @@
     margin: 16px 0 0
   &:hover
     border: 2px solid #FBFAF9
+  &__label
+    position: absolute
+    left: 0
+    top: 0
+    z-index: 1
+    padding: 3px 10px
+    color: #000000
+    font-size: 12px
+    line-height: 24px
+    background: #FFF5EC
+    display: none
 
 /*==========  section popular end  ==========*/
 
@@ -247,6 +262,8 @@
 /*==========  section profitable-terms  ==========*/
 .form-callback
   margin: 40px 0 0
+  h3
+    font-size: 32px
 
 .profitable-terms
   padding: 123px 0
@@ -258,10 +275,10 @@
     content: ''
     position: absolute
     z-index: -1
-    right: 0
-    bottom: 0
-    width: 605px
-    height: 377px
+    right: -323px
+    bottom: -249px
+    width: 929px
+    height: 626px
     background: url("../img/decor-bg1.svg") no-repeat center
       size: 100%
 
@@ -421,16 +438,17 @@
 /*==========  section specialists  ==========*/
 .specialists
   padding: 0 0 150px
+  .box-text
+    margin: auto 0 0
+    font-size: 32px
+    font-weight: 600
 
 .specialists-content
   height: 100%
   display: flex
   flex-direction: column
   padding: 135px 0 0
-  .box-text
-    margin: auto 0 0
-    font-size: 32px
-    font-weight: 600
+
   h2
     span
       display: block
@@ -497,6 +515,9 @@
     font-size: 24px
   h2
     margin: 0 0 32px
+  .btn
+    span
+      font-size: 16px
 /*==========  section ages end  ==========*/
 
 
@@ -528,6 +549,10 @@
     font-weight: 600
     &:hover
       color: $brown
+  .box-text
+    font-size: 16px
+    margin: 8px 0 0
+    line-height: 32px
 
 .sales-slider
   margin: 0 -30px
@@ -553,6 +578,8 @@
     min-width: 18px
     transition: .3s ease
 
+.btn-text-mobile
+  display: none
 /*==========  section sales end  ==========*/
 
 

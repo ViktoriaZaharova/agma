@@ -80,9 +80,15 @@
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .card-product__img img {
-      background-blend-mode: darken; }
+      height: 100%;
+      width: auto;
+      max-width: none;
+      mix-blend-mode: multiply; }
   .card-product__body {
     width: 100%;
     padding: 88px 32px 32px;
@@ -219,7 +225,8 @@
   font-size: 14px;
   border: 2px solid transparent;
   -webkit-transition: .3s ease;
-  transition: .3s ease; }
+  transition: .3s ease;
+  position: relative; }
   .product-card__img {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -250,11 +257,24 @@
     margin: 16px 0 0; }
   .product-card:hover {
     border: 2px solid #FBFAF9; }
+  .product-card__label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    padding: 3px 10px;
+    color: #000000;
+    font-size: 12px;
+    line-height: 24px;
+    background: #FFF5EC;
+    display: none; }
 
 /*==========  section popular end  ==========*/
 /*==========  section profitable-terms  ==========*/
 .form-callback {
   margin: 40px 0 0; }
+  .form-callback h3 {
+    font-size: 32px; }
 
 .profitable-terms {
   padding: 123px 0;
@@ -265,10 +285,10 @@
     content: '';
     position: absolute;
     z-index: -1;
-    right: 0;
-    bottom: 0;
-    width: 605px;
-    height: 377px;
+    right: -323px;
+    bottom: -249px;
+    width: 929px;
+    height: 626px;
     background: url("../img/decor-bg1.svg") no-repeat center;
       background-size: 100%; }
 
@@ -445,6 +465,10 @@
 /*==========  section specialists  ==========*/
 .specialists {
   padding: 0 0 150px; }
+  .specialists .box-text {
+    margin: auto 0 0;
+    font-size: 32px;
+    font-weight: 600; }
 
 .specialists-content {
   height: 100%;
@@ -456,10 +480,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 135px 0 0; }
-  .specialists-content .box-text {
-    margin: auto 0 0;
-    font-size: 32px;
-    font-weight: 600; }
   .specialists-content h2 span {
     display: block;
     margin: 0 0 72px;
@@ -537,6 +557,8 @@
     font-size: 24px; }
   .ages-content h2 {
     margin: 0 0 32px; }
+  .ages-content .btn span {
+    font-size: 16px; }
 
 /*==========  section ages end  ==========*/
 /*==========  section sales ==========*/
@@ -574,6 +596,10 @@
     font-weight: 600; }
     .sale-card__title:hover {
       color: #C6916A; }
+  .sale-card .box-text {
+    font-size: 16px;
+    margin: 8px 0 0;
+    line-height: 32px; }
 
 .sales-slider {
   margin: 0 -30px; }
@@ -609,6 +635,9 @@
     min-width: 18px;
     -webkit-transition: .3s ease;
     transition: .3s ease; }
+
+.btn-text-mobile {
+  display: none; }
 
 /*==========  section sales end  ==========*/
 /*==========  section  ==========*/
