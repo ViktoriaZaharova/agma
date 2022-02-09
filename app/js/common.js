@@ -31,14 +31,6 @@ $(document).ready(function () {
 
 });
 
-
-// $('.sales-slider').slick({
-//     slidesToShow: 3,
-//     arrows: false,
-//
-// });
-
-
 // slick active
 $(window).on('load resize', function() {
     if ($(window).width() < 576) {
@@ -54,3 +46,39 @@ $(window).on('load resize', function() {
     }
 });
 // slick active
+
+
+$('.btn-catalog, .btn-menu').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay').fadeToggle();
+    $('.dropdown-wrapper').fadeToggle();
+});
+
+$('.dropdown-wrapper__close, .overlay').on('click', function (e) {
+    e.preventDefault();
+    $('.dropdown-wrapper').fadeOut();
+    $('.overlay').fadeOut();
+});
+
+$('.catalog-links').on('click', function (e) {
+    e.preventDefault();
+    $('.dropdown-catalog').fadeIn();
+    $('.dropdown-menu-list').fadeOut();
+});
+
+$(".js-tab-trigger").on('click', function (e) {
+    e.preventDefault();
+    var id = $(this).attr('data-tab'),
+        content = $('.js-tab-content[data-tab="'+ id +'"]');
+    $('.overlay').fadeIn();
+    // $('.js-tab-trigger.active').removeClass('active'); // 1
+    // $(this).addClass('active'); // 2
+
+    $('.js-tab-content.active').removeClass('active'); // 3
+    content.addClass('active'); // 4
+});
+
+$('.mobile-dropdown-close, .overlay').on('click', function () {
+    $('.js-tab-content').removeClass('active');
+    $('.overlay').fadeOut();
+});

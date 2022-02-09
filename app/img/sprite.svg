@@ -60,4 +60,10 @@
         <path d="M8 1L2 7L8 13" stroke-width="2"/>
     </symbol>
 
+
+    <symbol id="close" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M19.6528 1.42877L18.2489 0L9.99998 8.39461L1.75107 0L0.347106 1.42877L8.59601 9.82338L0 18.5712L1.40397 20L9.99998 11.2521L18.596 20L20 18.5712L11.4039 9.82338L19.6528 1.42877Z"/>
+    </symbol>
+
 </svg>

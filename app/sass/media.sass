@@ -560,6 +560,18 @@
   .text-mobile
     display: block
 
+  .dropdown-wrapper
+    padding: 50px 0
+
+  .catalog-col-menu li
+    margin: 0 0 10px
+
+  .dropdown-menu-list
+    display: block
+
+  .dropdown-catalog
+    display: none
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1010px)
   header
@@ -611,6 +623,17 @@
     .dropdown
       margin: 0 0 0 auto
 
+  .catalog-col__img img
+    right: -10px
+
+  .catalog-col3 .catalog-col__img img
+    right: 0
+
+  .catalog-col2 .catalog-col__img img
+    right: 0
+
+  .catalog-col4 .catalog-col__img img
+    right: 0
 
 @media only screen and (max-width: 768px)
   .container
@@ -728,6 +751,57 @@
 
   footer .btn-group
     margin: 0 0 80px
+
+  .dropdown-wrapper
+    height: 100%
+    top: 0
+    max-width: 425px
+    width: 100%
+    position: fixed
+    padding: 60px
+    border: none
+      right: 2px solid #000
+    .container
+      height: 100%
+      overflow-y: auto
+    &__close
+      top: 72px
+      transform: none
+      left: calc(100% + 22px)
+    &__title
+      color: #000
+      margin: 0 0 39px
+      font-size: 48px
+      font-weight: 600
+      line-height: 56px
+    .documents-links
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      margin: 39px 0 0
+    .documents-links-pdf
+      color: #000
+      margin: 0 0 39px
+      background: #F5F0ED
+      .svg-icon
+        stroke: #000
+    .format-document
+      color: #fff
+    .documents-links-price
+      color: #000
+      .svg-icon
+        stroke: #000
+
+  .menu-list
+    flex-direction: column
+    align-items: flex-start
+    li
+      margin: 0 0 39px
+
+  .catalog-col
+    margin: 0 0 30px
+
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
@@ -1050,3 +1124,9 @@
       width: 26px
       height: 26px
       min-width: 26px
+
+  .fixed-mobile
+    display: block
+
+  .overlay
+    opacity: .1

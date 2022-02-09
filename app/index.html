@@ -31,6 +31,9 @@
 
 <body>
 
+<div class="overlay"></div>
+
+
 <!--### HEADER ###-->
 <header>
   <div class="container">
@@ -129,6 +132,111 @@
       </div>
     </div>
   </div>
+
+  <div class="dropdown-wrapper">
+    <div class="container">
+      <div class="dropdown-catalog">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <div class="catalog-col catalog-col1">
+              <a href="catalog2.html" class="catalog-col__title">Фигурные погонажные <br>
+                изделия</a>
+              <a href="catalog2.html" class="catalog-col__img"><img src="img/product1.png" alt=""></a>
+              <ul class="catalog-col-menu ul-my">
+                <li><a href="product.html">Каннелюр телескоп</a></li>
+                <li><a href="product.html">Розетка</a></li>
+                <li><a href="product.html">Цоколь</a></li>
+                <li><a href="product.html">Карниз</a></li>
+                <li><a href="product.html">Соединения</a></li>
+                <li><a href="product.html">Капитель</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <div class="catalog-col catalog-col2">
+              <a href="catalog2.html" class="catalog-col__title">Стандартные погонажные изделия</a>
+              <a href="catalog2.html" class="catalog-col__img"><img src="img/product2.png" alt=""></a>
+              <ul class="catalog-col-menu ul-my">
+                <li><a href="product.html">Дверная коробка</a></li>
+                <li><a href="product.html">Наличник</a></li>
+                <li><a href="product.html">Доборная доска</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <div class="catalog-col catalog-col3">
+              <a href="catalog2.html" class="catalog-col__title">Телескопические погонажные изделия</a>
+              <a href="catalog2.html" class="catalog-col__img"><img src="img/product3.png" alt=""></a>
+              <ul class="catalog-col-menu ul-my">
+                <li><a href="product.html">Каннелюр телескоп</a></li>
+                <li><a href="product.html">Наличник</a></li>
+                <li><a href="product.html">Каннелюр телескопический</a></li>
+                <li><a href="product.html">Добор</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <div class="catalog-col catalog-col4">
+              <a href="catalog2.html" class="catalog-col__title">Дверные полотна</a>
+              <a href="catalog2.html" class="catalog-col__img"><img src="img/product4.png" alt=""></a>
+              <ul class="catalog-col-menu ul-my">
+                <li><a href="product.html">Серия ОЛИМПИЯ</a></li>
+                <li><a href="product.html">Серия ВИТЕЛИЯ</a></li>
+                <li><a href="product.html">Серия ОМЕГА</a></li>
+                <li><a href="product.html">Серия НИЦЦА </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="dropdown-menu-list">
+        <div class="row">
+          <div class="col-12 d-block d-md-none">
+            <div class="dropdown-wrapper__title">Меню</div>
+          </div>
+          <div class="col-12">
+            <ul class="ul-my menu-list">
+              <li><a href="#" class="catalog-links">Каталог</a></li>
+              <li><a href="partners.html">Партнерам</a></li>
+              <li><a href="sales.html">Акции</a></li>
+              <li><a href="about.html">О компании</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="col-12 d-block d-md-none">
+            <div class="documents-links">
+              <a href="#" class="documents-links-pdf">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#pdf"></use>
+                </svg>
+                <span class="text">Каталог</span>
+                <span class="format-document">PDF</span>
+              </a>
+              <a href="#" class="documents-links-price">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#price"></use>
+                </svg>
+                <span class="text">Прайс</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown-wrapper__close">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </div>
+  </div>
+
 </header>
 <!--### HEADER end ###-->
 
@@ -1108,21 +1216,183 @@
 </footer>
 
 <!--### FOOTER END ###-->
+<div class="fixed-mobile">
 
-
-<div class="fixed-menu">
-  <div class="fixed-menu-btn">
-    <div class="fixed-menu-btn__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#burger"></use></svg></div>
-    <div class="fixed-menu-btn__text">Меню</div>
+  <div class="mobile-dropdown js-tab-content" data-tab="1">
+    <div class="mobile-dropdown__head">
+      <div class="mobile-dropdown__title">Поиск</div>
+      <div class="mobile-dropdown-close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="mobile-dropdown__body">
+      <form method="post" class="form-search">
+        <label><input type="text" placeholder="Что будем искать?" name="search"></label>
+        <button type="submit" class="btn btn-border-black">Искать</button>
+      </form>
+    </div>
   </div>
 
-  <div class="fixed-menu-btn search-links">
-    <div class="fixed-menu-btn__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></div>
-    <div class="fixed-menu-btn__text">Поиск</div>
+
+  <div class="mobile-dropdown js-tab-content" data-tab="2">
+    <div class="mobile-dropdown__head">
+      <div class="mobile-dropdown__title">Меню</div>
+      <div class="mobile-dropdown-close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="mobile-dropdown__body">
+      <ul class="mobile-menu-list">
+        <li>
+          <a href="#" class="mobile-menu-list__links js-tab-trigger" data-tab="3">
+            <span class="text">Каталог</span>
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#next"></use>
+            </svg>
+          </a>
+        </li>
+        <li><a href="partners.html">Партнерам</a></li>
+        <li><a href="sales.html">Акции</a></li>
+        <li><a href="about.html">О компании</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+
+      <div class="documents-links">
+        <a href="#" class="documents-links-pdf">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#pdf"></use>
+          </svg>
+          <span class="text">Каталог</span>
+          <span class="format-document">PDF</span>
+        </a>
+        <a href="#" class="documents-links-price">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#price"></use>
+          </svg>
+          <span class="text">Прайс</span>
+        </a>
+      </div>
+    </div>
   </div>
-  <a href="tel:+79644925935" class="phone-links">
-    <div class="fixed-menu-btn__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#phone3"></use></svg></div>
-  </a>
+
+
+  <div class="mobile-dropdown js-tab-content" data-tab="3">
+    <div class="mobile-dropdown__head">
+      <div class="mobile-dropdown__title">Каталог</div>
+      <div class="mobile-dropdown-close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="mobile-dropdown__body">
+      <div class="card-product card-product1">
+        <a href="#" class="card-product__img"><img src="img/product1.png" alt=""></a>
+        <div class="card-product__body">
+          <a href="#" class="card-product__name">Фигурные погонажные изделия</a>
+<span class="all-type">Более 15 видов</span>
+          <a href="#" class="links-arrow js-tab-trigger" data-tab="4">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="card-product card-product2">
+        <a href="#" class="card-product__img"><img src="img/product2.png" alt=""></a>
+        <div class="card-product__body">
+          <a href="#" class="card-product__name">Стандартные погонажные изделия</a>
+          <span class="all-type">Более 15 видов</span>
+          <a href="#" class="links-arrow js-tab-trigger" data-tab="4">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="card-product card-product3">
+        <a href="#" class="card-product__img"><img src="img/product3.png" alt=""></a>
+        <div class="card-product__body">
+          <a href="#" class="card-product__name">Телескопические погонажные изделия</a>
+          <span class="all-type">Более 15 видов</span>
+          <a href="#" class="links-arrow js-tab-trigger" data-tab="4">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="card-product card-product4">
+        <a href="#" class="card-product__img"><img src="img/product4.png" alt=""></a>
+        <div class="card-product__body">
+          <a href="#" class="card-product__name">Дверные <br>
+            полотна</a>
+          <span class="all-type">Более 15 видов</span>
+          <a href="#" class="links-arrow js-tab-trigger" data-tab="4">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-dropdown js-tab-content" data-tab="4">
+    <div class="mobile-dropdown__head">
+      <div class="mobile-dropdown__title">Каталог</div>
+      <div class="mobile-dropdown-close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="mobile-dropdown__body">
+      <ul class="mobile-menu-list">
+        <li>
+          <a href="#">Фигурные погонажные изделия</a>
+        </li>
+        <li><a href="#">Стандартные погонажные изделия</a></li>
+        <li><a href="#">Телескопические погонажные изделия</a></li>
+        <li><a href="#">Дверные полотна</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="fixed-menu">
+    <div class="fixed-menu-btn js-tab-trigger" data-tab="2">
+      <div class="fixed-menu-btn__icon">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#burger"></use>
+        </svg>
+      </div>
+      <div class="fixed-menu-btn__text">Меню</div>
+    </div>
+
+    <div class="fixed-menu-btn search-links js-tab-trigger" data-tab="1">
+      <div class="fixed-menu-btn__icon">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </div>
+      <div class="fixed-menu-btn__text">Поиск</div>
+    </div>
+    <a href="tel:+79644925935" class="phone-links">
+      <div class="fixed-menu-btn__icon">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#phone3"></use>
+        </svg>
+      </div>
+    </a>
+  </div>
+
 </div>
 
 <script src="js/jquery.min.js"></script>
