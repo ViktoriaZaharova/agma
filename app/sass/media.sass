@@ -92,6 +92,9 @@
   .page
     padding: 110px 0 130px
 
+  .catalog-page-internal
+    padding-bottom: 102px
+
 @media only screen and (max-width: 1430px)
   .menu
     margin: 0 auto 0 16px
@@ -263,6 +266,8 @@
   .developer-web
     margin: 49px 0 0 auto
 
+  .catalog-banner-v2
+    padding: 289px 28px 0 0
 
 @media only screen and (max-width: 1200px)
   header
@@ -589,6 +594,49 @@
   .catalog-card.card-product3 .card-product__img
     width: 472px
 
+  .product-card-col
+    max-width: 25%
+
+  .catalog-page-internal
+    padding-bottom: 70px
+    .sidebar
+      width: 100%
+      overflow-y: visible
+
+  .menu-products
+    flex-wrap: wrap
+    margin: 0
+    max-width: none
+    li
+      min-width: auto
+      width: fit-content
+      margin: 0
+      a
+        padding: 10px 20px
+
+  .mb-48
+    margin-bottom: 30px
+
+  .catalog-banner-v2
+    padding: 233px 22px 0 0
+    .catalog-banner__content
+      max-width: none
+      padding: 33px 27px
+      &:before
+        width: 77px
+        height: 98px
+        right: -22px
+        bottom: -25px
+    .catalog-banner__bg
+      left: 0
+      top: 0
+      right: auto
+      bottom: auto
+    h4
+      margin: 0 0 17px
+      font-size: 25px
+      line-height: 24px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1010px)
   header
@@ -658,6 +706,12 @@
   .catalog-card.card-product4 .card-product__img
     width: 200px
 
+  .menu-products
+    li
+      margin: 0 0 10px
+
+
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 850px)
   .documents-links
@@ -678,6 +732,31 @@
 
   .catalog-col4 .catalog-col__img img
     right: 0
+
+  .product-card-col
+    max-width: 33.3%
+
+  .mb-48
+    margin-bottom: 20px
+
+  .catalog-banner-v2
+    padding: 179px 17px 0 0
+    h4
+      font-size: 19px
+      line-height: 18px
+      margin: 0 0 13px
+    .catalog-banner__content
+      &:before
+        width: 59px
+        height: 75px
+        right: -17px
+        bottom: -19px
+
+  .catalog-page-internal
+    .product-card__img
+      height: 150px
+
+
 
 @media only screen and (max-width: 768px)
   .container
@@ -877,6 +956,9 @@
 
   .page
     padding: 110px 0 115px
+
+  .catalog-page-internal
+    padding-bottom: 70px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
@@ -1235,6 +1317,17 @@
     left: auto
     width: 180px
 
+  .catalog-page-internal
+    padding-bottom: 20px
+
+  .catalog-banner-v2
+    padding: 180px 17px 0 0
+    .catalog-banner__content
+      padding: 25px 20px
+    h4
+      font-size: 19px
+      line-height: 18px
+      margin: 0 0 13px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 480px)
@@ -1255,3 +1348,6 @@
 
   .overlay
     opacity: .1
+
+  .product-card-col
+    max-width: 50%

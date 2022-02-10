@@ -56,4 +56,69 @@
       width: 285px
       height: 719px
 
+
+.product-card-col
+  max-width: 20%
+
+.menu-products
+  max-width: 250px
+  margin: 0 0 48px
+  li
+    margin: 0 0 24px
+    .active
+      background: #000
+      color: #fff
+
+    a
+      width: 100%
+      border: 1px solid transparent
+      &:hover
+        background: #fff
+        border-color: #000
+
+.catalog-banner-v2
+  padding: 289px 28px 0 0
+  h4
+    font-size: 32px
+    font-weight: 300
+    line-height: 29px
+    margin: 0 0 21px
+  .catalog-banner__bg
+    width: 100%
+    height: 100%
+    bottom: 0
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  .catalog-banner__content
+    position: relative
+    background: #F5F0ED
+    width: 100%
+    padding: 42px 33px 41px
+    overflow: hidden
+    &:before
+      content: ''
+      position: absolute
+      background: url("../img/decor-bg1.svg") no-repeat center
+        size: 100%
+      width: 94px
+      height: 121px
+      right: -28px
+      bottom: -31px
+
+.catalog-page-internal
+  padding-bottom: 102px
+
+.btn-filter
+  &:after
+    content: ''
+    width: 16px
+    height: 16px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 0 0 10px
+    background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5L8 11L15 5' stroke='black' stroke-width='2'/%3E%3C/svg%3E%0A") no-repeat center
+      size: 100%
 /*========== catalog page end  ==========*/
