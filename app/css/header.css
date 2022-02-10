@@ -29,6 +29,8 @@ header {
     background: #fff;
     color: #000;
     border-bottom: 2px solid #000; }
+    header.fixed:before {
+      display: none; }
     header.fixed .logo {
       -webkit-filter: invert(1);
               filter: invert(1); }
@@ -67,11 +69,53 @@ header {
 .header {
   background: #fff;
   color: #000; }
+  .header .btn-menu {
+    color: #000; }
+  .header .btn-menu__icon {
+    fill: #000;
+    stroke: none; }
+    .header .btn-menu__icon .svg-icon {
+      stroke: none; }
   .header:before {
     background: #000; }
   .header .logo {
     -webkit-filter: invert(1);
             filter: invert(1); }
+  .header .menu li a {
+    color: #000; }
+  .header .btn-catalog .svg-icon {
+    fill: #000;
+    stroke: none; }
+  .header .svg-icon {
+    stroke: #000; }
+  .header .documents-links-pdf {
+    background: #F5F0ED;
+    color: #000; }
+    .header .documents-links-pdf .svg-icon {
+      stroke: #000; }
+  .header .format-document {
+    color: #fff; }
+  .header .documents-links-price {
+    color: #000; }
+    .header .documents-links-price .svg-icon {
+      stroke: #000; }
+  .header .btn-border {
+    color: #000;
+    border-color: #000; }
+    .header .btn-border:hover, .header .btn-border:focus {
+      border: 1px solid #000;
+      color: #000;
+      background: transparent; }
+  .header .dropdown-toggle:hover, .header .dropdown-toggle:focus {
+    border: 1px solid #000;
+    color: #000;
+    background: transparent; }
+  .header .dropdown-toggle::after {
+    background: url("data:image/svg+xml,%3Csvg width='16' height='9' viewBox='0 0 16 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L8 7L15 1' stroke='black' stroke-width='2'/%3E%3C/svg%3E%0A") no-repeat center;
+      background-size: 100%; }
+  .header .show > .btn-secondary.dropdown-toggle {
+    border: 1px solid #000;
+    color: #000; }
 
 .text-mobile {
   display: none; }

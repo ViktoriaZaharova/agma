@@ -89,6 +89,8 @@
     .slide
       padding: 0 15px
 
+  .page
+    padding: 110px 0 130px
 
 @media only screen and (max-width: 1430px)
   .menu
@@ -102,6 +104,8 @@
 
   .documents-links
     margin: 0 36.5px
+
+
 
 
 @media only screen and (max-width: 1350px)
@@ -572,6 +576,19 @@
   .dropdown-catalog
     display: none
 
+  .catalog-card
+    .card-product__name
+      font-size: 28px
+
+  .catalog-card.card-product1 .card-product__img
+    width: 405px
+    height: 300px
+    top: -72px
+    right: -191px
+
+  .catalog-card.card-product3 .card-product__img
+    width: 472px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1010px)
   header
@@ -613,6 +630,33 @@
       line-height: 24px
       margin: 16px 0 0
 
+  .catalog-card .card-product__name
+    font-size: 20px
+
+  .page
+    h1
+      margin-bottom: 50px
+
+  .catalog-card .all-type
+    margin: 24px 0 20px
+
+  .breadcrumb-nav
+    margin: 20px 0
+
+  .catalog-card.card-product1 .card-product__img
+    top: -54px
+    right: -216px
+
+
+  .catalog-card.card-product2 .card-product__img
+    width: 400px
+    height: 300px
+
+  .catalog-card.card-product3 .card-product__img
+    width: 370px
+
+  .catalog-card.card-product4 .card-product__img
+    width: 200px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 850px)
@@ -801,7 +845,38 @@
   .catalog-col
     margin: 0 0 30px
 
+  .catalog-card
+    padding: 271px 32px 32px 32px
+    .card-product__img
+      width: 100%
+      height: 271px
 
+    .card-product__body
+      width: 100%
+
+  .catalog-card.card-product1 .card-product__img
+    left: 68px
+    top: -100px
+
+  .catalog-card.card-product2 .card-product__img
+    left: -20px
+    top: -50px
+
+  .catalog-card.card-product3 .card-product__img
+    left: 70%
+    top: -80px
+    transform: translate(-50%,0)
+
+  .catalog-card.card-product4 .card-product__img
+    left: 102px
+    height: 537px
+    width: 215px
+
+  .mb-30
+    margin-bottom: 15px
+
+  .page
+    padding: 110px 0 115px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
@@ -1110,6 +1185,56 @@
       line-height: 22px
       margin: 30px 0 0
       max-width: 328px
+
+  .page
+    padding: 96px 0 35px
+    h1
+      margin-bottom: 30px
+
+  .breadcrumb
+    margin: 50px 0 20px
+
+  .catalog-card
+    padding: 0
+    .card-product__body
+      width: 50%
+      padding: 20px
+    .card-product__name
+      font-size: 16px
+      max-width: 150px
+    .all-type
+      margin: 15px 0
+      font-size: 14px
+    .links-arrow
+      margin: 0
+
+  .catalog-card.card-product1 .card-product__img
+    width: 257px
+    height: 187px
+    bottom: 40px
+    right: -77px
+    left: auto
+    top: auto
+
+  .catalog-card.card-product2 .card-product__img
+    top: -40px
+    left: auto
+    right: -45px
+    width: 248px
+    height: 207px
+
+  .catalog-card.card-product3 .card-product__img
+    width: 272px
+    height: 249px
+    left: auto
+    transform: none
+    right: -80px
+
+  .catalog-card.card-product4 .card-product__img
+    right: -19px
+    left: auto
+    width: 180px
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 480px)

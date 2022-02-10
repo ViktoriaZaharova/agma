@@ -44,7 +44,7 @@ body
   line-height: normal
   font-family: $default-font
   font-weight: normal
-  background: rgb(255,255,255)
+  background: rgb(255, 255, 255)
   color: #000
 
 html, body
@@ -64,6 +64,7 @@ a
   transition: .3s ease
   outline: none
   width: fit-content
+
   &:hover, &:focus
     text-decoration: none
 
@@ -83,6 +84,7 @@ input, textarea, select
   line-height: 145.4%
   color: #000000
   background: transparent
+
   &::placeholder
     color: #000000
 
@@ -106,6 +108,7 @@ button, .btn
   border: none
     radius: 0
   line-height: normal
+
   &:hover, &:focus
     outline: none
     box-shadow: none
@@ -171,7 +174,6 @@ button, .btn
   padding: 30px
 
 
-
 .btn-black
   color: #fff
   border-radius: 16px
@@ -180,10 +182,12 @@ button, .btn
   height: 56px
   font-size: 16px
   width: fit-content
+
   &:hover
     background: $accent
     color: #000
     text-decoration: none
+
   .btn-arrow
     margin: 0 0 0 16px
     display: flex
@@ -251,6 +255,9 @@ h3
 .mb-40
   margin-bottom: 40px
 
+.mb-30
+  margin-bottom: 30px
+
 strong, b
   display: inline-block
   font-weight: bold
@@ -266,6 +273,7 @@ strong, b
 
 .links-grey
   color: #808080
+
   &:hover
     color: #fff
 
@@ -310,10 +318,12 @@ strong, b
     radius: 0
   box-shadow: none
   transition: .3s ease
+
   &:hover, &:focus
     box-shadow: none
     outline: none
     stroke: #808080
+
   .svg-icon
     width: 9px
     height: 12px
@@ -327,7 +337,7 @@ strong, b
 .slider
   position: relative
   width: 100%
-  //height: 100%
+//height: 100%
 
 .counter-slide
   display: flex
@@ -337,9 +347,45 @@ strong, b
   border-radius: 30px
   background: #fff
   font-size: 16px
+
   &__cp
     margin: 0 3px 0 0
+
   &__default
     color: #808080
 
+.breadcrumb-nav
+  width: 100%
+  margin: 48px 0
 
+.breadcrumb
+  background: transparent
+  padding: 0
+  border: none
+    radius: 0
+  margin: 0
+  letter-spacing: 0.05em
+  font-size: 16px
+  color: #B3B3B3
+
+.breadcrumb-item + .breadcrumb-item
+  padding: 0
+  color: #B3B3B3
+  &:before
+    display: none
+
+
+.breadcrumb-item
+  a
+    color: #B3B3B3
+    display: flex
+    align-items: center
+
+    &:after
+      content: ""
+      display: inline-block
+      width: 6px
+      height: 10px
+      background: url("../img/line.svg") no-repeat center
+        size: 100%
+      margin: 0 16px
