@@ -1,0 +1,91 @@
+@import "vars"
+
+/*========== vacancies page  ==========*/
+.vacancies-page
+  padding-bottom: 150px
+
+.links-toggle
+  color: #000
+  display: flex
+  align-items: center
+  font-size: 16px
+  line-height: 32px
+  &:hover
+    color: $brown
+  &__icon
+    fill: none
+    stroke: #000
+    width: 6px
+    height: 14px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 0 0 9px
+
+    .svg-icon
+      transform: rotate(90deg)
+  &.open
+    .links-toggle__icon
+      display: none
+  &__text-mob
+    display: none
+
+
+.vacancies-page__description
+  padding: 0 0 56px
+  border-bottom: 2px solid #000
+  font-size: 24px
+  line-height: 48px
+
+.vacancies-box
+  padding: 56px 0
+  border-bottom: 2px solid #000
+  font-size: 24px
+  line-height: 40px
+  max-width: 715px
+  h4
+    font-weight: 600
+    line-height: 32px
+    margin: 0 0 16px
+
+.btn-call
+  margin: 56px 0 0
+
+.actual-vacancies
+  max-width: 715px
+  margin: 0 0 0 auto
+  h3
+    margin: 0 0 56px
+    font-size: 48px
+
+
+.actual-vacancies-box
+  border: none
+  margin: 0 0 32px
+  padding: 32px
+  background: #FBFAF9
+  h4
+    margin: 0 0 24px
+
+.row-text
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  font-size: 16px
+  line-height: 32px
+
+.vacancies-box-text
+  margin: 0 32px 24px 0
+  &:last-child
+    margin: 0 0 24px
+  p
+    font-weight: 600
+    margin: 0 0 8px
+  li
+    display: none
+    &:nth-child(-n+1)
+      display: block
+
+
+/*========== vacancies page end  ==========*/

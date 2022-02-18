@@ -1,0 +1,123 @@
+@import "vars"
+
+/*========== sales page  ==========*/
+.sales-page
+  padding-bottom: 90px
+
+.sales-page-details
+  padding-bottom: 100px
+  h1
+    margin: 0
+    font-size: 56px
+  &__info
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin: 48px 0
+  &__date
+    margin: 0 32px 0 0
+    color: #808080
+  &__img
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    max-height: 615px
+    overflow: hidden
+    img
+      width: 100%
+  .box-text
+    line-height: 36px
+    margin: 56px 0 0
+    p
+      margin: 0 0 32px
+      &:last-child
+        margin: 0
+    h2
+      margin: 0 0 32px
+      font-size: 32px
+      line-height: 48px
+    h3
+      font-size: 24px
+      line-height: 32px
+      margin: 0 0 32px
+    h4
+      margin: 32px 0
+      font-size: 16px
+      font-weight: 600
+      line-height: 36px
+    ul
+      padding: 0 0 0 20px
+      li
+        margin: 0 0 8px
+        &:last-child
+          margin: 0
+    ol
+      list-style: none
+      counter-reset: my-awesome-counter
+      margin: 0 0 32px
+      li
+        counter-increment: my-awesome-counter
+        &:before
+          content: counter(my-awesome-counter)
+          font-weight: bold
+          display: inline-block
+          margin: 0 10px 0 0
+
+
+
+
+.share
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  p
+    margin: 0 13px 0 0
+
+.list-share
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    margin: 0 8px 0 0
+    &:last-child
+      margin: 0
+  a
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 21px
+    height: 21px
+
+.table-responsive
+  overflow-x: auto
+  width: 100%
+  margin: 32px 0 0
+
+.table
+  line-height: 36px
+  font-size: 16px
+  margin: 0
+  width: 100%
+  td
+    padding: 12px 0
+    border:
+      bottom: 1px solid #000
+  thead
+    th
+      padding: 12px 0
+      font-weight: 600
+      border:
+        top: 1px solid #000
+        bottom: 1px solid #000
+
+.other-sales
+  padding: 0 0 90px
+  h2
+    padding: 0 0 56px
+    border-bottom: 2px solid #000
+  .sale-card__img
+    height: 190px
+
+/*========== sales page end  ==========*/

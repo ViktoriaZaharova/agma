@@ -71,8 +71,6 @@ $(".js-tab-trigger").on('click', function (e) {
     var id = $(this).attr('data-tab'),
         content = $('.js-tab-content[data-tab="'+ id +'"]');
     $('.overlay').fadeIn();
-    // $('.js-tab-trigger.active').removeClass('active'); // 1
-    // $(this).addClass('active'); // 2
 
     $('.js-tab-content.active').removeClass('active'); // 3
     content.addClass('active'); // 4
@@ -82,3 +80,4 @@ $('.mobile-dropdown-close, .overlay').on('click', function () {
     $('.js-tab-content').removeClass('active');
     $('.overlay').fadeOut();
 });
+

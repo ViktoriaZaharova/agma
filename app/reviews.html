@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Agma - Ведущий производитель погонажных изделий в России</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/catalog.css">
+  <link rel="stylesheet" href="css/reviews.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+
+<div class="overlay"></div>
+
+<!--### HEADER ###-->
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+        <div class="btn-menu">
+          <div class="btn-menu__icon">
+            <svg class="svg-icon">
+              <use
+                  xlink:href="img/sprite.svg#burger"></use>
+            </svg>
+          </div>
+          <div class="btn-menu__text">Меню</div>
+        </div>
+
+        <ul class="menu ul-my">
+          <li><a href="#" class="btn-catalog">
+            <span class="btn-catalog__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#burger"></use></svg></span>
+            <span class="btn-catalog__text">Каталог</span>
+          </a></li>
+          <li class="dropdown">
+            <a class="btn btn-secondary btn-border dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+              Информация
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="partners.html">Партнерам</a>
+              <a class="dropdown-item" href="sales.html">Акции</a>
+              <a class="dropdown-item" href="about.html">О компании</a>
+              <a class="dropdown-item" href="contacts.html">Контакты</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="partners.html">Партнерам</a></li>
+          <li class="nav-item"><a href="sales.html">Акции</a></li>
+          <li class="nav-item"><a href="about.html">О компании</a></li>
+          <li class="nav-item"><a href="contacts.html">Контакты</a></li>
+        </ul>
+
+        <div class="header-links">
+          <a href="#" class="links-social">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+
+          <a href="#" class="btn-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </a>
+        </div>
+
+        <div class="documents-links">
+          <a href="#" class="documents-links-pdf">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#pdf"></use>
+            </svg>
+            <span class="text">Каталог</span>
+            <span class="format-document">PDF</span>
+          </a>
+          <a href="#" class="documents-links-price">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#price"></use>
+            </svg>
+            <span class="text">Прайс</span>
+          </a>
+        </div>
+
+        <div class="dropdown">
+          <a class="btn btn-secondary btn-border dropdown-toggle" href="#" role="button"
+             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="text-pc">Связаться с нами</span>
+            <span class="text-mobile">Связаться</span>
+          </a>
+
+          <div class="dropdown-menu dropdown-menu-contacts">
+            <div class="contacts-item">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#phone2"></use>
+              </svg>
+              <a href="tel:+79303303333" class="phone">8 930 330-33-33</a>
+              <div class="schedule">9:00 - 18:00</div>
+            </div>
+            <a href="mailto:agmainfo@yandex.ru" class="mail">
+              <span class="svg-icon"><img src="img/mail.svg" alt=""></span>
+              <span class="text">agmainfo@yandex.ru</span>
+            </a>
+            <a href="#" class="btn btn-border-black" data-toggle="modal" data-target="#callbackModal">Заказать
+              звонок</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="dropdown-wrapper">
+    <div class="container">
+      <div class="dropdown-catalog">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <div class="catalog-col catalog-col1">
+              <a href="catalog2.html" class="catalog-col__title">Фигурные погонажные <br>
+                изделия</a>
+              <a href="catalog2.html" class="catalog-col__img"><img src="img/product1.png" alt=""></a>
+              <ul class="catalog-col-menu ul-my">
+                <li><a href="product.html">Каннелюр телескоп</a></li>
+                <li><a href="product.html">Розетка</a></li>
+                <li><a href="product.html">Цоколь</a></li>
+                <li><a href="product.html">Карниз</a></li>
+                <li><a href="product.html">Соединения</a></li>
+                <li><a href="product.html">Капитель</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <div class="catalog-col catalog-col2">
+              <a href="catalog2.html" class="catalog-col__title">Стандартные погонажные изделия</a>
+              <a href="catalog2.html" class="catalog-col__img"><img src="img/product2.png" alt=""></a>
+              <ul class="catalog-col-menu ul-my">
+                <li><a href="product.html">Дверная коробка</a></li>
+                <li><a href="product.html">Наличник</a></li>
+                <li><a href="product.html">Доборная доска</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <div class="catalog-col catalog-col3">
+              <a href="catalog2.html" class="catalog-col__title">Телескопические погонажные изделия</a>
+              <a href="catalog2.html" class="catalog-col__img"><img src="img/product3.png" alt=""></a>
+              <ul class="catalog-col-menu ul-my">
+                <li><a href="product.html">Каннелюр телескоп</a></li>
+                <li><a href="product.html">Наличник</a></li>
+                <li><a href="product.html">Каннелюр телескопический</a></li>
+                <li><a href="product.html">Добор</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <div class="catalog-col catalog-col4">
+              <a href="catalog2.html" class="catalog-col__title">Дверные полотна</a>
+              <a href="catalog2.html" class="catalog-col__img"><img src="img/product4.png" alt=""></a>
+              <ul class="catalog-col-menu ul-my">
+                <li><a href="product.html">Серия ОЛИМПИЯ</a></li>
+                <li><a href="product.html">Серия ВИТЕЛИЯ</a></li>
+                <li><a href="product.html">Серия ОМЕГА</a></li>
+                <li><a href="product.html">Серия НИЦЦА </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="dropdown-menu-list">
+        <div class="row">
+          <div class="col-12 d-block d-md-none">
+            <div class="dropdown-wrapper__title">Меню</div>
+          </div>
+          <div class="col-12">
+            <ul class="ul-my menu-list">
+              <li><a href="#" class="catalog-links">Каталог</a></li>
+              <li><a href="partners.html">Партнерам</a></li>
+              <li><a href="sales.html">Акции</a></li>
+              <li><a href="about.html">О компании</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="col-12 d-block d-md-none">
+            <div class="documents-links">
+              <a href="#" class="documents-links-pdf">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#pdf"></use>
+                </svg>
+                <span class="text">Каталог</span>
+                <span class="format-document">PDF</span>
+              </a>
+              <a href="#" class="documents-links-price">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#price"></use>
+                </svg>
+                <span class="text">Прайс</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown-wrapper__close">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </div>
+  </div>
+
+</header>
+<!--### HEADER end ###-->
+
+
+<section class="page reviews-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="breadcrumb-nav">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item"><a href="about.html">О компании</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Отзывы</li>
+          </ol>
+        </nav>
+      </div>
+
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-12 col-sm-6">
+        <h1>Отзывы</h1>
+      </div>
+      <div class="col-12 col-sm-6">
+        <a href="#" class="btn btn-border-black btn-reviews" data-toggle="modal" data-target="#reviewsModal">Оставить
+          отзыв</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="reviews-box">
+          <div class="reviews-box__head">
+            <h4>Светлана</h4>
+          </div>
+
+          <div class="reviews-box__body">
+            <div class="box-text">
+              <p>Я долго изучала фабрики и отзывы людей на них, пытаясь подобрать действительно хорошую фабрику. В
+                итоге, остановила свой выбор на ульяновских дверях 5 океанов. Для своего ценового сегмента они оказались
+                очень хороши, да и было из чего выбрать. Двери простояли месяц, пока всем довольна.</p>
+            </div>
+
+            <div class="reviews-box__date">14 Сентября, 2017</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="reviews-box">
+          <div class="reviews-box__head">
+            <h4>Владимир</h4>
+          </div>
+
+          <div class="reviews-box__body">
+            <div class="box-text">
+              <p>А у меня мебель под орех, и двери взял ореховые. Модель не помню, но классные, всем советую!)</p>
+            </div>
+
+            <div class="reviews-box__date">14 Сентября, 2017</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="reviews-box">
+          <div class="reviews-box__head">
+            <h4>ИП Никифоров</h4>
+          </div>
+
+          <div class="reviews-box__body">
+            <div class="box-text">
+              <p>Занимаюсь оптовой реализацией хороших межкомнатных дверей. Могу сразу сказать: дверные полотна
+                отличного качества. Широкий модельный ряд и демократичная цена. С течением времени свою красоту
+                и функциональность нисколько не теряют.</p>
+            </div>
+
+            <div class="reviews-box__date">14 Сентября, 2017</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!--### FOOTER  ###-->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-7 col-xl-4">
+        <div class="footer-box">
+          <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+          <div class="description-company">AGMA - фабрика дверей, ведущий производитель погонажных изделий в России
+          </div>
+
+          <a href="#" class="links-social">
+            <span class="links-social__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#instagram"></use></svg></span>
+            <span class="links-social__text">Instagram</span>
+          </a>
+        </div>
+
+        <div class="copyright-box d-none d-xl-none">
+          <div class="copyright">2021 © ООО “АГМА” Все права защищены</div>
+
+          <a href="#" class="links-grey text-decoration" target="_blank">Политика конфиденциальности</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-5 col-xl-3 order-xl-1">
+        <div class="footer-col">
+          <a href="tel:+79644925935" class="phone-mobile">8 964 492 59 35</a>
+
+          <a href="#" class="btn btn-border" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a>
+
+          <a href="mailto:agmainfo@yandex.ru" class="mail">agmainfo@yandex.ru</a>
+
+          <a href="#" class="btn btn-border" data-toggle="modal" data-target="#callbackModal">Написать нам</a>
+        </div>
+
+        <a href="#" class="developer-web links-grey d-none d-xl-flex" target="_blank">Разработка сайта LYNXOFT</a>
+      </div>
+
+      <div class="col-12 col-xl-5">
+        <div class="row d-none d-sm-flex">
+          <div class="col-6 col-md-12 col-lg-7 col-menu">
+            <ul class="footer-menu ul-my">
+              <li><a href="catalog2.html">Фигурные погонажные изделия</a></li>
+              <li><a href="catalog.html">Стандартные погонажные изделия</a></li>
+              <li><a href="catalog.html">Телескопические погонажные изделия</a></li>
+              <li><a href="catalog.html">Дверные полотна</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-12 col-lg-4 col-menu">
+            <ul class="footer-menu ul-my">
+              <li><a href="partners.html">Партнерам</a></li>
+              <li><a href="sales.html">Акции</a></li>
+              <li><a href="about.html">О компании</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <a href="#" class="links-download btn btn-border">
+            <span class="links-download__text">Каталог</span>
+            <span class="links-download__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#download-icon"></use></svg></span>
+          </a>
+
+          <a href="#" class="links-download btn btn-border">
+            <span class="links-download__text">Прайс</span>
+            <span class="links-download__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#download-icon"></use></svg></span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row d-flex d-xl-none align-items-center">
+      <div class="col-12 col-sm-7 col-lg-6">
+        <div class="copyright-box">
+          <div class="copyright">2021 © ООО “АГМА” Все права защищены</div>
+
+          <a href="#" class="links-grey text-decoration" target="_blank">Политика конфиденциальности</a>
+        </div>
+      </div>
+      <div class="col-12 col-sm-5 col-lg-6">
+        <a href="#" class="developer-web links-grey" target="_blank">Разработка сайта LYNXOFT</a>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+<!--### FOOTER END ###-->
+<div class="fixed-mobile">
+
+  <div class="mobile-dropdown js-tab-content" data-tab="1">
+    <div class="mobile-dropdown__head">
+      <div class="mobile-dropdown__title">Поиск</div>
+      <div class="mobile-dropdown-close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="mobile-dropdown__body">
+      <form method="post" class="form-search">
+        <label><input type="text" placeholder="Что будем искать?" name="search"></label>
+        <button type="submit" class="btn btn-border-black">Искать</button>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="mobile-dropdown js-tab-content" data-tab="2">
+    <div class="mobile-dropdown__head">
+      <div class="mobile-dropdown__title">Меню</div>
+      <div class="mobile-dropdown-close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="mobile-dropdown__body">
+      <ul class="mobile-menu-list">
+        <li>
+          <a href="#" class="mobile-menu-list__links js-tab-trigger" data-tab="3">
+            <span class="text">Каталог</span>
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#next"></use>
+            </svg>
+          </a>
+        </li>
+        <li><a href="partners.html">Партнерам</a></li>
+        <li><a href="sales.html">Акции</a></li>
+        <li><a href="about.html">О компании</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+
+      <div class="documents-links">
+        <a href="#" class="documents-links-pdf">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#pdf"></use>
+          </svg>
+          <span class="text">Каталог</span>
+          <span class="format-document">PDF</span>
+        </a>
+        <a href="#" class="documents-links-price">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#price"></use>
+          </svg>
+          <span class="text">Прайс</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="mobile-dropdown js-tab-content" data-tab="3">
+    <div class="mobile-dropdown__head">
+      <div class="mobile-dropdown__title">Каталог</div>
+      <div class="mobile-dropdown-close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="mobile-dropdown__body">
+      <div class="card-product card-product1">
+        <a href="#" class="card-product__img"><img src="img/product1.png" alt=""></a>
+        <div class="card-product__body">
+          <a href="#" class="card-product__name">Фигурные погонажные изделия</a>
+          <span class="all-type">Более 15 видов</span>
+          <a href="#" class="links-arrow js-tab-trigger" data-tab="4">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="card-product card-product2">
+        <a href="#" class="card-product__img"><img src="img/product2.png" alt=""></a>
+        <div class="card-product__body">
+          <a href="#" class="card-product__name">Стандартные погонажные изделия</a>
+          <span class="all-type">Более 15 видов</span>
+          <a href="#" class="links-arrow js-tab-trigger" data-tab="4">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="card-product card-product3">
+        <a href="#" class="card-product__img"><img src="img/product3.png" alt=""></a>
+        <div class="card-product__body">
+          <a href="#" class="card-product__name">Телескопические погонажные изделия</a>
+          <span class="all-type">Более 15 видов</span>
+          <a href="#" class="links-arrow js-tab-trigger" data-tab="4">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="card-product card-product4">
+        <a href="#" class="card-product__img"><img src="img/product4.png" alt=""></a>
+        <div class="card-product__body">
+          <a href="#" class="card-product__name">Дверные <br>
+            полотна</a>
+          <span class="all-type">Более 15 видов</span>
+          <a href="#" class="links-arrow js-tab-trigger" data-tab="4">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-dropdown js-tab-content" data-tab="4">
+    <div class="mobile-dropdown__head">
+      <div class="mobile-dropdown__title">Каталог</div>
+      <div class="mobile-dropdown-close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="mobile-dropdown__body">
+      <ul class="mobile-menu-list">
+        <li>
+          <a href="#">Фигурные погонажные изделия</a>
+        </li>
+        <li><a href="#">Стандартные погонажные изделия</a></li>
+        <li><a href="#">Телескопические погонажные изделия</a></li>
+        <li><a href="#">Дверные полотна</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="fixed-menu">
+    <div class="fixed-menu-btn js-tab-trigger" data-tab="2">
+      <div class="fixed-menu-btn__icon">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#burger"></use>
+        </svg>
+      </div>
+      <div class="fixed-menu-btn__text">Меню</div>
+    </div>
+
+    <div class="fixed-menu-btn search-links js-tab-trigger" data-tab="1">
+      <div class="fixed-menu-btn__icon">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </div>
+      <div class="fixed-menu-btn__text">Поиск</div>
+    </div>
+    <a href="tel:+79644925935" class="phone-links">
+      <div class="fixed-menu-btn__icon">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#phone3"></use>
+        </svg>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+<!-- Модальное окно -->
+<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Связаться</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form-callback form">
+
+          <label class="box-input">
+            <input type="text" name="name" required>
+            <span class="input-text">Ваше имя</span>
+          </label>
+          <label class="box-input">
+            <input type="text" name="phone" required>
+            <span class="input-text">Телефон</span>
+          </label>
+          <div class="form-wrapper">
+            <button type="submit" class="btn btn-black">
+              Связаться
+            </button>
+
+            <div class="consent">Нажимая кнопку «Cвязаться», я даю свое согласие на обработку моих персональных данных,
+              в соответствии с политикой конфиденциальности
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="reviewsModal" tabindex="-1" aria-labelledby="reviewsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Оставить отзыв</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form-callback form">
+
+          <label class="box-input">
+            <input type="text" name="name" required>
+            <span class="input-text">Ваше имя</span>
+          </label>
+          <label class="box-input">
+            <input type="text" name="comment" required>
+            <span class="input-text">Отзыв</span>
+          </label>
+          <div class="form-wrapper">
+            <button type="submit" class="btn btn-black">
+              Отправить отзыв
+            </button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

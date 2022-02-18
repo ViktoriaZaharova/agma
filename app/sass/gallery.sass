@@ -1,0 +1,138 @@
+@import "vars"
+
+/*========== gallery page  ==========*/
+.gallery-page
+  padding-bottom: 94px
+
+
+.gallery-box
+  width: 100%
+  position: relative
+  margin: 0 0 56px
+  font-size: 16px
+  &__img
+    width: 100%
+    height: 228px
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: 100%
+    padding: 24px 0 0
+  .date
+    margin: 0 0 8px
+    color: #808080
+    font-weight: 600
+  &__title
+    color: #000
+    font-size: 24px
+    font-weight: 600
+    &:hover
+      color: $brown
+  .links-arrow
+    margin: 24px 0 0
+
+.images-value
+  position: absolute
+  z-index: 1
+  bottom: 20px
+  left: 20px
+  display: flex
+  align-items: center
+  background: rgba(250, 250, 250, 0.6)
+  border-radius: 16px
+  padding: 6px 16px
+  color: #000
+  font-size: 16px
+  line-height: 24px
+  &:hover
+    color: #000
+  &__icon
+    width: 16px
+    height: 16px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 10px 0 0
+
+
+.box-hidden
+  display: none
+
+.gallery-page-details
+  padding-bottom: 150px
+  h1
+    margin: 0
+
+.date-tour
+  font-size: 24px
+  font-weight: 600
+  line-height: 32px
+  margin: 64px 0
+
+.gallery-item
+  width: 100%
+  height: 220px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 30px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.pagination-gallery
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  font-size: 16px
+  font-weight: 600
+  margin: 44px 0 0
+  border:
+    top: 2px solid #000
+    bottom: 2px solid #000
+  li
+    flex: 1
+    border:
+      right: 2px solid #000
+    &:last-child
+      border: none
+    a
+      width: 100%
+      padding: 24px 0
+      display: flex
+      align-items: center
+      justify-content: center
+      text-align: center
+      color: #000
+      &:hover
+        color: $brown
+  &__links
+    .svg-icon
+      fill: none
+      stroke: #000
+  &__icon
+    width: 24px
+    height: 24px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 24px 0 0
+
+
+.links-prev
+  .svg-icon
+    transform: rotate(180deg)
+
+.links-next
+  .pagination-gallery__icon
+    margin: 0 0 0 24px
+
+/*========== gallery page end  ==========*/
