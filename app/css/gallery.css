@@ -1,0 +1,172 @@
+/*========== gallery page  ==========*/
+.gallery-page {
+  padding-bottom: 94px; }
+
+.gallery-box {
+  width: 100%;
+  position: relative;
+  margin: 0 0 56px;
+  font-size: 16px; }
+  .gallery-box__img {
+    width: 100%;
+    height: 228px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative; }
+    .gallery-box__img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .gallery-box__body {
+    width: 100%;
+    padding: 24px 0 0; }
+  .gallery-box .date {
+    margin: 0 0 8px;
+    color: #808080;
+    font-weight: 600; }
+  .gallery-box__title {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600; }
+    .gallery-box__title:hover {
+      color: #C6916A; }
+  .gallery-box .links-arrow {
+    margin: 24px 0 0; }
+
+.images-value {
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(250, 250, 250, 0.6);
+  border-radius: 16px;
+  padding: 6px 16px;
+  color: #000;
+  font-size: 16px;
+  line-height: 24px; }
+  .images-value:hover {
+    color: #000; }
+  .images-value__icon {
+    width: 16px;
+    height: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 10px 0 0; }
+
+.box-hidden {
+  display: none; }
+
+.gallery-page-details {
+  padding-bottom: 150px; }
+  .gallery-page-details h1 {
+    margin: 0; }
+
+.date-tour {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  margin: 64px 0; }
+
+.gallery-item {
+  width: 100%;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 30px; }
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.pagination-gallery {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 44px 0 0;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000; }
+  .pagination-gallery li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border-right: 2px solid #000; }
+    .pagination-gallery li:last-child {
+      border: none; }
+    .pagination-gallery li a {
+      width: 100%;
+      padding: 24px 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      text-align: center;
+      color: #000; }
+      .pagination-gallery li a:hover {
+        color: #C6916A; }
+  .pagination-gallery__links .svg-icon {
+    fill: none;
+    stroke: #000; }
+  .pagination-gallery__icon {
+    width: 24px;
+    height: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 24px 0 0; }
+
+.links-prev .svg-icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.links-next .pagination-gallery__icon {
+  margin: 0 0 0 24px; }
+
+/*========== gallery page end  ==========*/

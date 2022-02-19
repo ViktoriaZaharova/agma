@@ -1,0 +1,30 @@
+/*========== reviews page  ==========*/
+.reviews-page {
+  padding-bottom: 150px; }
+
+.btn-reviews {
+  margin: 0 0 80px auto;
+  height: 56px;
+  padding: 0 34px; }
+
+.reviews-box {
+  width: 100%; }
+  .reviews-box__head {
+    width: 100%;
+    margin: 0 0 32px;
+    padding: 0 0 32px;
+    border-bottom: 2px solid #000; }
+  .reviews-box__date {
+    margin: 32px 0 0;
+    color: #808080;
+    font-size: 14px;
+    line-height: 32px; }
+  .reviews-box .box-text {
+    font-size: 16px;
+    line-height: 32px; }
+  .reviews-box h4 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px; }
+
+/*========== reviews page end  ==========*/

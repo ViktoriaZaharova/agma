@@ -1,0 +1,100 @@
+/*========== vacancies page  ==========*/
+.vacancies-page {
+  padding-bottom: 150px; }
+
+.links-toggle {
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  line-height: 32px; }
+  .links-toggle:hover {
+    color: #C6916A; }
+  .links-toggle__icon {
+    fill: none;
+    stroke: #000;
+    width: 6px;
+    height: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 0 9px; }
+    .links-toggle__icon .svg-icon {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
+  .links-toggle.open .links-toggle__icon {
+    display: none; }
+  .links-toggle__text-mob {
+    display: none; }
+
+.vacancies-page__description {
+  padding: 0 0 56px;
+  border-bottom: 2px solid #000;
+  font-size: 24px;
+  line-height: 48px; }
+
+.vacancies-box {
+  padding: 56px 0;
+  border-bottom: 2px solid #000;
+  font-size: 24px;
+  line-height: 40px;
+  max-width: 715px; }
+  .vacancies-box h4 {
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0 0 16px; }
+
+.btn-call {
+  margin: 56px 0 0; }
+
+.actual-vacancies {
+  max-width: 715px;
+  margin: 0 0 0 auto; }
+  .actual-vacancies h3 {
+    margin: 0 0 56px;
+    font-size: 48px; }
+
+.actual-vacancies-box {
+  border: none;
+  margin: 0 0 32px;
+  padding: 32px;
+  background: #FBFAF9; }
+  .actual-vacancies-box h4 {
+    margin: 0 0 24px; }
+
+.row-text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 16px;
+  line-height: 32px; }
+
+.vacancies-box-text {
+  margin: 0 32px 24px 0; }
+  .vacancies-box-text:last-child {
+    margin: 0 0 24px; }
+  .vacancies-box-text p {
+    font-weight: 600;
+    margin: 0 0 8px; }
+  .vacancies-box-text li {
+    display: none; }
+    .vacancies-box-text li:nth-child(-n+1) {
+      display: block; }
+
+/*========== vacancies page end  ==========*/

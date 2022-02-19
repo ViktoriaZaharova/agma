@@ -381,6 +381,35 @@ strong, b {
 .slick-next {
   border-radius: 0 100px 100px 0; }
 
+.slick-dots {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  bottom: 0;
+  margin: 30px 0 0; }
+  .slick-dots li {
+    cursor: pointer;
+    margin: 0 24px 0 0;
+    border-radius: 50%;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    width: 6px;
+    height: 6px;
+    background: #E6E6E6; }
+    .slick-dots li button {
+      display: none; }
+  .slick-dots .slick-active {
+    background: #000; }
+
 .slider {
   position: relative;
   width: 100%; }

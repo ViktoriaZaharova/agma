@@ -1,0 +1,191 @@
+/*========== about page ==========*/
+.about-section h1 {
+  margin: 0;
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: normal; }
+
+.about-section__content {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.about-section__img {
+  min-width: 1026px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.logo-company {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  margin: 0 0 45px;
+  max-width: 432px;
+  width: 100%; }
+  .logo-company img {
+    width: 100%; }
+
+.priorities {
+  padding: 130px 0;
+  position: relative;
+  overflow: hidden; }
+  .priorities:before {
+    content: '';
+    position: absolute;
+    background: url("../img/decor-bg2.svg") no-repeat center;
+      background-size: 100%;
+    width: 1392px;
+    height: 2060px;
+    left: -539px;
+    top: 0; }
+
+.priorities-content {
+  max-width: 650px;
+  margin: 0 0 0 auto;
+  width: 100%; }
+
+.priorities-box {
+  margin: 0 0 96px; }
+  .priorities-box:last-child {
+    margin: 0; }
+  .priorities-box .box-text {
+    font-size: 24px;
+    line-height: 48px; }
+  .priorities-box h3 {
+    margin: 0 0 56px; }
+
+.company-departments {
+  padding: 133px 0; }
+
+.company-departments-box .box-text {
+  font-size: 24px;
+  line-height: 48px;
+  margin: 40px 0; }
+
+.productions-section {
+  margin: 133px 0 103px; }
+  .productions-section .card-product__name {
+    font-size: 24px; }
+  .productions-section .card-product__img {
+    top: -160px;
+    width: 405px;
+    height: 293px; }
+  .productions-section .catalog-card.card-product2 .card-product__img {
+    width: 551px;
+    height: 407px;
+    top: -160px; }
+  .productions-section .catalog-card.card-product3 .card-product__img {
+    top: -160px;
+    width: 572px;
+    height: 403px;
+    right: -170px; }
+  .productions-section .links-arrow {
+    display: none; }
+
+.production-description {
+  margin: 108px 0 174px; }
+  .production-description .production-slider__item {
+    height: 735px;
+    min-width: 938px; }
+  .production-description .box-text {
+    margin: 88px 0; }
+
+.production-composition-about {
+  margin: 174px 0 0;
+  padding: 0 0 50px; }
+  .production-composition-about .production-composition-box {
+    margin: 0 0 111px;
+    max-width: 617px;
+    width: 100%; }
+    .production-composition-about .production-composition-box .box-text {
+      font-size: 24px;
+      line-height: 48px; }
+    .production-composition-about .production-composition-box h3 {
+      font-size: 48px;
+      line-height: 1;
+      margin: 56px 0; }
+    .production-composition-about .production-composition-box__icon {
+      width: 64px;
+      height: 64px; }
+      .production-composition-about .production-composition-box__icon img {
+        width: 100%; }
+  .production-composition-about .production-wrapper {
+    margin: 56px 0 0; }
+  .production-composition-about .production-slider__item {
+    min-width: auto;
+    width: 100%;
+    height: 440px; }
+  .production-composition-about .production-slider {
+    min-width: auto; }
+
+.company-in-number {
+  margin: 152px 0; }
+  .company-in-number .box-text {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px; }
+  .company-in-number h3 {
+    font-size: 150px;
+    margin: 0 0 40px;
+    line-height: 1; }
+    .company-in-number h3 span {
+      font-size: 24px;
+      line-height: 48px;
+      font-weight: normal; }
+
+.details-about .box-text {
+  font-size: 24px;
+  line-height: 48px; }
+
+.details-about h3 {
+  font-size: 48px;
+  line-height: 48px;
+  margin: 56px 0; }
+
+.details-about .production-composition-box {
+  margin: 0 0 100px; }
+
+.details-about .production-composition-box__icon {
+  width: 64px;
+  height: 64px; }
+  .details-about .production-composition-box__icon img {
+    width: 100%; }
+
+.details-about .production-wrapper {
+  margin: 56px 0 0; }
+
+.details-about .production-slider__item {
+  min-width: auto;
+  width: 100%;
+  height: 412px; }
+
+.details-about .production-slider {
+  min-width: auto; }
+
+.details-about .production-wrapper-max {
+  margin: 0; }
+  .details-about .production-wrapper-max .production-slider {
+    min-width: 936px; }
+  .details-about .production-wrapper-max .production-slider__item {
+    min-width: 936px;
+    height: 804px; }
+
+/*========== about page end  ==========*/

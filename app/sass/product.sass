@@ -1,0 +1,252 @@
+@import "vars"
+
+/*========== product page ==========*/
+.product-page
+  padding-bottom: 150px
+  h1
+    font-size: 48px
+    line-height: 56px
+    margin: 0
+
+.code-product
+  margin: 0 0 32px
+  font-weight: 600
+  color: #808080
+
+.product-name
+  margin: 0 0 56px
+
+
+.product-photo
+  width: 100%
+
+.gallery-product
+  margin: 0 0 32px
+
+.gallery-product-item
+  width: 100%
+  position: relative
+  height: 509px
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 48px
+  border: 2px solid #FBFAF9
+    radius: 16px
+  img
+    max-height: 100%
+  .images-value
+    padding: 10px 24px
+    bottom: 48px
+    left: 48px
+
+.gallery-preview
+  width: 100%
+  padding: 0 32px
+  .slick-slide
+    padding: 0 8px
+
+  .slick-current
+    .gallery-preview-item
+      border-color: #000
+
+.gallery-preview-item
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 1px solid transparent
+    radius: 16px
+  width: 100%
+  height: 85px
+  padding: 8px
+  background: #FBFAF9
+  img
+    max-height: 100%
+
+.product-content
+  max-width: 852px
+  margin: 0 0 0 auto
+
+.product-characteristic
+  width: 100%
+  margin: 0 0 40px
+  line-height: 24px
+  &:last-child
+    margin: 0
+  p
+    margin: 0 0 16px
+  .js-tab-trigger
+    display: none
+
+.list-characteristic
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-weight: 600
+  &__icon
+    margin: 0 16px 0 0
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 24px
+    height: 24px
+  li
+    display: flex
+    align-items: center
+    &:after
+      content: ''
+      display: inline-block
+      margin: 0 16px
+      border-radius: 50%
+      width: 8px
+      height: 8px
+      background: #E6E6E6
+    &:last-child
+      &:after
+        display: none
+
+.radio
+  transition: .3s ease
+  cursor: pointer
+  position: relative
+  line-height: 24px
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  z-index: 1
+
+.inp-radio
+  position: absolute
+  border: none
+  width: 100%
+  height: 100%
+
+  border-radius: 16px
+  z-index: -1
+
+.radio-text
+  padding: 10px 24px
+
+.inp-radio:checked
+  background: #000
+  + .radio-text
+      color: #fff
+
+.list-radio
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  li
+    margin: 0 16px 0 0
+    &:last-child
+      margin: 0
+
+.btn-order
+  margin: 56px 0 0
+
+.description-product
+  margin: 56px 0 0
+  padding: 56px 0
+  line-height: 32px
+  border:
+    top: 2px solid #000
+    bottom: 2px solid #000
+  h3
+    line-height: 40px
+    font-size: 32px
+    margin: 0 0 32px
+  .box-text
+    p
+      margin: 0 0 30px
+      &:last-child
+        margin: 0
+  .btn
+    display: none
+
+.slick-arrow-my
+  position: absolute
+  top: 50%
+  transform: translate(0,-50%)
+  width: 32px
+  height: 32px
+  border: 2px solid #808080
+    radius: 50%
+  stroke: #808080
+  &:hover
+    border-color: #000
+    stroke: #000
+
+.slick-arrow-my.slick-prev
+  left: 0
+
+.slick-arrow-my.slick-next
+  right: 0
+
+.more-category
+  margin: 0 0 206px
+  h2
+    margin: 0 0 56px
+    font-size: 48px
+    line-height: 56px
+
+.more-category-slider
+  .slick-list
+    margin: 0 -16px
+  .slick-slide
+    padding: 0 16px
+  .product-card
+    border: none
+  .slick-prev
+    left: -16px
+  .slick-next
+    right: -16px
+
+.all-category
+  position: relative
+  margin: 56px 0 0
+  display: flex
+  align-items: center
+  overflow: hidden
+  background: #FBFAF9
+  border-radius: 16px
+  padding: 0 190px 0 0
+  font-size: 18px
+  font-weight: 600
+  line-height: 24px
+  color: #000
+  &:hover
+    color: $brown
+  &__img
+    position: absolute
+    max-width: 271px
+    height: 197px
+    width: 100%
+    top: -130px
+    right: -60px
+    display: flex
+    align-items: center
+    justify-content: center
+  &__body
+    padding: 24px
+    display: flex
+    align-items: center
+    max-width: 428px
+    width: 100%
+    min-width: 428px
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    fill: none
+    stroke: #000
+    width: 24px
+    height: 24px
+    min-width: 24px
+    margin: 0 16px 0 0
+    .svg-icon
+      transform: rotate(180deg)
+
+
+/*========== product page end  ==========*/

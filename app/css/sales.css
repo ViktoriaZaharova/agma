@@ -1,0 +1,142 @@
+/*========== sales page  ==========*/
+.sales-page {
+  padding-bottom: 90px; }
+
+.sales-page-details {
+  padding-bottom: 100px; }
+  .sales-page-details h1 {
+    margin: 0;
+    font-size: 56px; }
+  .sales-page-details__info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 48px 0; }
+  .sales-page-details__date {
+    margin: 0 32px 0 0;
+    color: #808080; }
+  .sales-page-details__img {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-height: 615px;
+    overflow: hidden; }
+    .sales-page-details__img img {
+      width: 100%; }
+  .sales-page-details .box-text {
+    line-height: 36px;
+    margin: 56px 0 0; }
+    .sales-page-details .box-text p {
+      margin: 0 0 32px; }
+      .sales-page-details .box-text p:last-child {
+        margin: 0; }
+    .sales-page-details .box-text h2 {
+      margin: 0 0 32px;
+      font-size: 32px;
+      line-height: 48px; }
+    .sales-page-details .box-text h3 {
+      font-size: 24px;
+      line-height: 32px;
+      margin: 0 0 32px; }
+    .sales-page-details .box-text h4 {
+      margin: 32px 0;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 36px; }
+    .sales-page-details .box-text ul {
+      padding: 0 0 0 20px; }
+      .sales-page-details .box-text ul li {
+        margin: 0 0 8px; }
+        .sales-page-details .box-text ul li:last-child {
+          margin: 0; }
+    .sales-page-details .box-text ol {
+      list-style: none;
+      counter-reset: my-awesome-counter;
+      margin: 0 0 32px; }
+      .sales-page-details .box-text ol li {
+        counter-increment: my-awesome-counter; }
+        .sales-page-details .box-text ol li:before {
+          content: counter(my-awesome-counter);
+          font-weight: bold;
+          display: inline-block;
+          margin: 0 10px 0 0; }
+
+.share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .share p {
+    margin: 0 13px 0 0; }
+
+.list-share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .list-share li {
+    margin: 0 8px 0 0; }
+    .list-share li:last-child {
+      margin: 0; }
+  .list-share a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 21px;
+    height: 21px; }
+
+.table-responsive {
+  overflow-x: auto;
+  width: 100%;
+  margin: 32px 0 0; }
+
+.table {
+  line-height: 36px;
+  font-size: 16px;
+  margin: 0;
+  width: 100%; }
+  .table td {
+    padding: 12px 0;
+    border-bottom: 1px solid #000; }
+  .table thead th {
+    padding: 12px 0;
+    font-weight: 600;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000; }
+
+.other-sales {
+  padding: 0 0 90px; }
+  .other-sales h2 {
+    padding: 0 0 56px;
+    border-bottom: 2px solid #000; }
+  .other-sales .sale-card__img {
+    height: 190px; }
+
+/*========== sales page end  ==========*/

@@ -32,7 +32,7 @@ $(document).ready(function () {
 });
 
 // slick active
-$(window).on('load resize', function() {
+$(window).on('load resize', function () {
     if ($(window).width() < 576) {
         $('.slider-mobile:not(.slick-initialized)').slick({
             speed: 100,
@@ -69,7 +69,7 @@ $('.catalog-links').on('click', function (e) {
 $(".js-tab-trigger").on('click', function (e) {
     e.preventDefault();
     var id = $(this).attr('data-tab'),
-        content = $('.js-tab-content[data-tab="'+ id +'"]');
+        content = $('.js-tab-content[data-tab="' + id + '"]');
     $('.overlay').fadeIn();
 
     $('.js-tab-content.active').removeClass('active'); // 3
@@ -81,3 +81,72 @@ $('.mobile-dropdown-close, .overlay').on('click', function () {
     $('.overlay').fadeOut();
 });
 
+$('.gallery-product').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    asNavFor: '.gallery-preview',
+    responsive: [
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                dots: true,
+                arrows: false
+
+            }
+        }
+    ]
+});
+
+$('.gallery-preview').slick({
+    slidesToShow: 4,
+    asNavFor: '.gallery-product',
+    focusOnSelect: true,
+    prevArrow: '<button type="button" class="slick-prev slick-arrow-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next slick-arrow-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 1010,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                vertical: true,
+                slidesToShow: 3,
+
+            }
+        }
+    ]
+});
+
+$('.more-category-slider').slick({
+    slidesToShow: 5,
+    prevArrow: '<button type="button" class="slick-prev slick-arrow-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next slick-arrow-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 1010,
+            settings: {
+                slidesToShow: 4,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 650,
+            settings: {
+                slidesToShow: 2,
+                arrows: false,
+                dots: true
+            }
+        }
+    ]
+});
